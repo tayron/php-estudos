@@ -1,4 +1,4 @@
-Exemplos do conteúdo de estudo para passar no exame para subir de nível \o/
+Conteúdo para ser estudado para subir de nível na empresa \o/
 
 #PHP AVANÇADO
 
