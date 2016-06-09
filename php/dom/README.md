@@ -1,4 +1,4 @@
-#DOM
+#DOM - DOMDocument
 
 Classe que representa uma estrutura HTM ou XML; 
 Serve como a raiz da árvore de documento e pode ser usada para criar e iterar sobre estrururas XML e HTML.
