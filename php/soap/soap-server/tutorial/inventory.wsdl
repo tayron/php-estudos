@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<definitions name='Inventory'
+  targetNamespace='urn:JimmyzInventory'
+  xmlns:tns='urn:JimmyzInventory'
+  xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/'
+  xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+  xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding/'
+  xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+  xmlns='http://schemas.xmlsoap.org/wsdl/'>
+
+<message name='getItemCountRequest'>
+  <part name='upc' type='xsd:string'/>
+</message>
+<message name='getItemCountResponse'>
+  <part name='Result' type='xsd:integer'/>
+</message>
+
+<portType name='InventoryPortType'>
+  <operation name='getItemCount'>
+    <input message='tns:getItemCountRequest'/>
+    <output message='tns:getItemCountResponse'/>
+  </operation>
+</portType>
+
+<binding name='InventoryBinding' type='tns:InventoryPortType'>
+  <soap:binding style='rpc'
+    transport='http://schemas.xmlsoap.org/soap/http'/>
+  <operation name='getItemCount'>
+    <soap:operation soapAction='urn:xmethods-delayed-quotes#getItemCount'/>
+    <input>
+      <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+        encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+    </input>
+    <output>
+      <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+        encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+    </output>
+  </operation>
+</binding>
+
+<service name='InventoryService'>
+  <port name='InventoryPort' binding='InventoryBinding'>
+    <soap:address location='http://localhost/php/soap/soap-server/tutorial/server.php'/>
+  </port>
+</service>
+</definitions>
