@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<definitions name='Inventario'
+             targetNamespace='urn:JimmyzInventario'
+             xmlns:tns='urn:JimmyzInventario'
+             xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/'
+             xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+             xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding/'
+             xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+             xmlns='http://schemas.xmlsoap.org/wsdl/'>
+
+    <message name='calcularRequest'>
+        <part name='a' type='xsd:integer'/>
+        <part name='b' type='xsd:integer'/>
+    </message>
+    <message name='calcularResponse'>
+        <part name='resultado' type='xsd:integer'/>
+    </message>
+
+    <portType name='InventarioPortType'>
+        <operation name='calcular'>
+            <input message='tns:calcularRequest'/>
+            <output message='tns:calcularResponse'/>
+        </operation>
+    </portType>
+
+    <binding name='InventarioBinding' type='tns:InventarioPortType'>
+        <soap:binding style='rpc'
+                transport='http://schemas.xmlsoap.org/soap/http'/>
+        <operation name='calcular'>
+            <soap:operation soapAction='urn:xmethods-delayed-quotes#calcular'/>
+            <input>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                 encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </input>
+            <output>
+                <soap:body use='encoded' namespace='urn:xmethods-delayed-quotes'
+                 encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name='InventarioService'>
+        <port name='InventarioPort' binding='InventarioBinding'>
+            <soap:address location='http://localhost/php/soap/soap-server/servidor.php'/>
+        </port>
+    </service>
+</definitions>

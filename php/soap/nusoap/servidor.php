@@ -1,6 +1,10 @@
 <?php
 require_once('lib/nusoap.php');
-require_once('Calculo.php');
+
+function somar($a, $b)
+{
+    return $a + $b;
+}
 
 // Configurando o webservice
 $server = new soap_server();
@@ -10,7 +14,7 @@ $server->wsdl->schemaTargetNamespace = 'urn:RVApi';
 
 // Registrando o serviço somar
 $server->register(
-    'Calculo.somar',
+    'somar',
     array(
         'numeroA' => 'xsd:int',
         'numeroB' => 'xsd:int'
@@ -20,8 +24,7 @@ $server->register(
     'urn:RVApi#somar',  //soapaction
     'rpc', // style
     'encoded', // use
-    'Realiza a soma entre 2 numeros',
-    'utf-8'
+    'Realiza a soma entre 2 numeros'
 );
 
-$server->service(file_get_contents("php://input"));
+$server->service(file_get_contents('php://input'));
