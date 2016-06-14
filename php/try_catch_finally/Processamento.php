@@ -25,7 +25,7 @@ class Processamento
             $this->gravarDadosWebserviceItau($this->usuario->buscarUsuario());
         } catch (UsuarioNaoEncontradoException $ex){
             $this->usuario->criaUsuario();
-            $this->gravarDadosWebserviceItau($this->buscarUsuario());
+            $this->gravarDadosWebserviceItau($this->usuario->buscarUsuario());
         } catch (DadosNaoGravadoNoWebserviceItauException $ex){
             $this->enviarSmsParaSuporteItau($ex->getMessage());
         } catch (Exception $ex) {
