@@ -7,17 +7,22 @@
 interface ServicoInterface
 {
     /**
-     * Salva um parametro
+     * Salva um registro
      */
     public function salvar($parametro);
     
     /**
-     * Deleta um parametro
+     * Altera um registro
+     */
+    public function atualizar($parametro);
+    
+    /**
+     * Deleta um registro
      */
     public function deletar($parametro);
     
     /**
-     * Recupera dados de um parametro
+     * Recupera dados
      */
     public function buscar($parametro = null);
 }

@@ -1,5 +1,5 @@
 <?php
-require_once('ServicoAbstrato.php');
+require_once('ServicoInterface.php');
 
 /**
  * 
@@ -7,7 +7,7 @@ require_once('ServicoAbstrato.php');
 class ClienteWebservice implements ServicoAbstrato
 {
     /**
-     * @param type parametro
+     * Salva um registro
      */
     public function salvar($parametro) 
     {
@@ -15,7 +15,15 @@ class ClienteWebservice implements ServicoAbstrato
     }
     
     /**
-     * @param type parametro
+     * Altera um registro
+     */
+    public function atualizar($parametro)
+    {
+        
+    }
+    
+    /**
+     * Deleta um registro
      */
     public function deletar($parametro) 
     {
@@ -23,7 +31,7 @@ class ClienteWebservice implements ServicoAbstrato
     }
 
     /**
-     * @param type parametro
+     * Recupera dados
      */
     public function buscar($parametro = null) 
     {

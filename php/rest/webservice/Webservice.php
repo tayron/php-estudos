@@ -14,7 +14,7 @@ class Webservice extends WebserviceAbstrato
     {        
         $this->rotas = array(
             'cliente' => array('PUT', 'DELETE', 'GET'),
-            'Usuario' => array('PUT', 'GET')
+            'Usuario' => array('POST', 'PUT', 'GET')
         );
     }
 }

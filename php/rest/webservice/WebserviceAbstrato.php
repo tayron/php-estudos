@@ -1,4 +1,5 @@
 <?php
+require_once('../servicos/ClienteServico.php');
 
 /**
  * Description of WebserviceAbstrato
@@ -16,7 +17,8 @@ abstract class WebserviceAbstrato
      *
      */
     private $listaServicos = array(
-        'PUT' => 'salvar',
+        'POST' => 'salvar',
+        'PUT' => 'atualizar',
         'GET' => 'buscar',
         'DELETE' => 'deletar'        
     );
