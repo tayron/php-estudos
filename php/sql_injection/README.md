@@ -74,6 +74,7 @@ $stmt->bindParam(':senha', $senha, PDO::PARAM_INT);
 $stmt->execute();
 ```
 
+<br />
 Referências:
 
  * http://php.net/manual/pt_BR/security.database.sql-injection.php
