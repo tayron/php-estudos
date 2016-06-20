@@ -23,9 +23,9 @@ $sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '
 
 
 // Como poderia ser evitado
-$nome = 'Pedro';
-$email = 'pedro@oi.com.br';
-$senha = "123456'; truncate table usuarios;";
+$nome = mysql_real_escape_string('Pedro');
+$email = mysql_real_escape_string('pedro@oi.com.br');
+$senha = mysql_real_escape_string("123456'; truncate table usuarios;");
 
 $sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
 
