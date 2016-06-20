@@ -6,7 +6,7 @@ Injeção direta de comandos SQL é uma técnica onde um atacante cria ou altera
 
  * Deve-se desabilitar os erros no servidor em produção de forma que se consiga apenas visualiza-los através de arquivos de logs.
 
- * A função mySQL_real_escape_string() que escapa os caracteres especiais numa string para usar em um comando SQL, levando em conta o conjunto atual de caracteres.
+ * A função mysql_real_escape_string() que escapa os caracteres especiais numa string para usar em um comando SQL, levando em conta o conjunto atual de caracteres.
 
  * Outra opção é utilizar o objeto PDO para executar as SQLs, pois usa-se o método bindParam para setar parametros nas query que serão executadas, se alguma irregularidade existir o MySQL não executará a query.
 
@@ -48,11 +48,11 @@ $SQL = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '
 
 <br />
 
-4) Como poderia ser evitado utilizando a função mySQL_real_escape_string():
+4) Como poderia ser evitado utilizando a função mysql_real_escape_string():
 ```php
-$nome = mySQL_real_escape_string('Pedro');
-$email = mySQL_real_escape_string('pedro@oi.com.br');
-$senha = mySQL_real_escape_string("123456'; truncate table usuarios;");
+$nome = mysql_real_escape_string('Pedro');
+$email = mysql_real_escape_string('pedro@oi.com.br');
+$senha = mysql_real_escape_string("123456'; truncate table usuarios;");
 
 $SQL = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
 ```
@@ -78,5 +78,5 @@ $stmt->execute();
 Referências:
 
  * http://php.net/manual/pt_BR/security.database.SQL-injection.php
- * http://php.net/manual/pt_BR/function.mySQL-real-escape-string.php
+ * http://php.net/manual/pt_BR/function.mysql-real-escape-string.php
  * http://bazaglia.com/como-evitar-completamente-SQL-injection-no-php
