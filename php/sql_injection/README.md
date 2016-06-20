@@ -18,8 +18,13 @@ $email = 'pedro@oi.com.br';
 $senha = '123456';
 
 $sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
+```
 
-// Provocando um erro para tentar objter o nome da tabela de usuários
+<br />
+2) Exemplo de inserção de parametros para se tentar provocar um erro de sql com o intuito de tentar descobrir o nome da tabela:
+
+```php
+// Provocando um erro para tentar obter o nome da tabela de usuários
 $nome = 'Pedro';
 $email = 'pedro@oi.com.br';
 $senha = "123456'asdfasdfasdfasdfasdf";
@@ -29,7 +34,7 @@ $sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '
 
 <br />
 
-2) Apagando todos os registros de usuários do sistema através do sql injection:
+3) Apagando todos os registros de usuários do sistema através do sql injection:
 
 ```php
 $nome = 'Pedro';
@@ -49,7 +54,7 @@ $sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '
 
 <br />
 
-3) Utilizando objeto PDO para executar as querys no banco:
+4) Utilizando objeto PDO para executar as querys no banco:
 
 ```php
 $nome = 'Pedro';
