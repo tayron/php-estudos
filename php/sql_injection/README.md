@@ -4,6 +4,8 @@ Injeção direta de comandos SQL é uma técnica onde um atacante cria ou altera
 
  * Para evitar ataques deve-se tratar todos os dados de entrada e que será utilizado em algum sql, pode se tratar estes dados utilizando a função addslashes(), está função adiciona uma barra invertida antes de qualquer aspas simples e duplas.
 
+ * Deve-se desabilitar os erros no servidor em produção de forma que se consiga apenas visualiza-los através de arquivos de logs.
+
  * A função mysql_real_escape_string() que escapa os caracteres especiais numa string para usar em um comando SQL, levando em conta o conjunto atual de caracteres.
 
  * Outra opção é utilizar o objeto PDO para executar as SQLs, pois usa-se o método bindParam para setar parametros nas query que serão executadas, se alguma irregularidade existir o MySQL não executará a query.
