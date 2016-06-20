@@ -1,5 +1,3 @@
-Conteúdo para ser estudado para subir de nível na empresa \o/
-
 #PHP AVANÇADO
 
 - XML Extension
