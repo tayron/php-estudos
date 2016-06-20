@@ -44,9 +44,12 @@ $email = 'pedro@oi.com.br';
 $senha = "123456'; truncate table usuarios;";
 
 $sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
+```
 
+<br />
 
-// Como poderia ser evitado
+4) Como poderia ser evitado utilizando a função mysql_real_escape_string():
+```php
 $nome = mysql_real_escape_string('Pedro');
 $email = mysql_real_escape_string('pedro@oi.com.br');
 $senha = mysql_real_escape_string("123456'; truncate table usuarios;");
@@ -56,7 +59,7 @@ $sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '
 
 <br />
 
-4) Utilizando objeto PDO para executar as querys no banco:
+5) Utilizando objeto PDO para executar as querys no banco:
 
 ```php
 $nome = 'Pedro';
