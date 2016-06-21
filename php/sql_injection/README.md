@@ -89,8 +89,9 @@ Exemplos:
 ')) or (('x'))=(('
 ```
 
-Sites vulneráveis:
-1) http://www.i2t2.com/admin/login.php
+Sites vulneráveis:<br />
+* http://www.i2t2.com/admin/login.php
+* http://www.bitaraf.com/admin/login.php
 
 <br />
 Referências:
@@ -98,3 +99,4 @@ Referências:
  * http://php.net/manual/pt_BR/security.database.SQL-injection.php
  * http://php.net/manual/pt_BR/function.mysql-real-escape-string.php
  * http://bazaglia.com/como-evitar-completamente-SQL-injection-no-php
+ * http://securityidiots.com/Web-Pentest/SQL-Injection/bypass-login-using-sql-injection.html
