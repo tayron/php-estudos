@@ -19,7 +19,7 @@ $nome = 'Pedro';
 $email = 'pedro@oi.com.br';
 $senha = '123456';
 
-$SQL = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
+$sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
 ```
 
 <br />
@@ -31,7 +31,7 @@ $nome = 'Pedro';
 $email = 'pedro@oi.com.br';
 $senha = "123456'asdfasdfasdfasdfasdf";
 
-$SQL = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
+$sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
 ```
 
 <br />
@@ -43,7 +43,7 @@ $nome = 'Pedro';
 $email = 'pedro@oi.com.br';
 $senha = "123456'; truncate table usuarios;";
 
-$SQL = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
+$sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
 ```
 
 <br />
@@ -54,7 +54,7 @@ $nome = mysql_real_escape_string('Pedro');
 $email = mysql_real_escape_string('pedro@oi.com.br');
 $senha = mysql_real_escape_string("123456'; truncate table usuarios;");
 
-$SQL = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
+$sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '{$senha}'";
 ```
 
 <br />
@@ -66,8 +66,8 @@ $nome = 'Pedro';
 $email = 'pedro@oi.com.br';
 $senha = "123456'; truncate table usuarios;";
 
-$SQL= "insert into usuarios set nome = ':nome', email = ':email', senha = ':senha'"; 
-$stmt = $pdo->prepare($SQL);
+$sql = "insert into usuarios set nome = ':nome', email = ':email', senha = ':senha'"; 
+$stmt = $pdo->prepare($sql);
 $stmt->bindParam(':nome', $nome, PDO::PARAM_STR);
 $stmt->bindParam(':email', $email, PDO::PARAM_STR);
 $stmt->bindParam(':senha', $senha, PDO::PARAM_INT);
