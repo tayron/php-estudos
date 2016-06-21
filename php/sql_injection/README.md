@@ -26,7 +26,6 @@ $sql = "insert into usuarios set nome = '{$nome}', email = '{$email}', senha = '
 2) Exemplo de inserção de parametros para se tentar provocar um erro de SQL com o intuito de tentar descobrir o nome da tabela:
 
 ```php
-// Provocando um erro para tentar obter o nome da tabela de usuários
 $nome = 'Pedro';
 $email = 'pedro@oi.com.br';
 $senha = "123456'asdfasdfasdfasdfasdf";
