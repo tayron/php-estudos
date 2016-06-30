@@ -27,7 +27,7 @@ A prevenção contra a injeção no header de e-mail é simples: Ou você faz o 
 Tratando:
 ```php
 $email_origem = preg_replace( "/[rn]/", '', $email_origem);
-```php
+```
 
 Validando:
 
