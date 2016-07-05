@@ -56,7 +56,6 @@ var_dump(filter_input(INPUT_POST, 'var', FILTER_DEFAULT , FILTER_REQUIRE_ARRAY))
 ```
 
 ```php
-
 class myValidator
 {
   public function username($value)
@@ -76,6 +75,43 @@ Do mesmo grupo de filtros  temos também:
 * filter_input_array() - Obtem variáveis externas e opcionalmente as filtra
 * filter_var_array() - Obtêm múltiplas variáveis e opcionalmente as filtra
 
+2) isset, is_null, etc...
+É comum ver dados de serem validados utilizando funções e expressões que verifica 
+se um deteminado dado foi passado em branco, nulo, etc...
+
+```php
+if(!in_array($_POST['nome'], null, " ")){
+  // O campo nome do formulário foi preenchido
+}else{
+  // O campo nome do formulário não foi preenchido
+}
+
+$emailValido = emailValido($_POST['email']);
+if($emailValido){
+  // Email válido
+}else{
+  // Email inválido
+}
+
+if($_POST['telefone'] != null){
+ // Telefone foi informado
+}
+
+```
+
+Existe outras formas de filtrar os dados como htmlspecialchars, htmlentities que substituem códigos html por caracteres especiais.
+Ambas as funções funcionam de forma semelhante exceto que htmlentities() todos caracteres que tem entidade HTML equivalente são convertidos para estas entidades.
+Para decodificar use html_entity_decode().
+
+```php
+$str = "A 'quote' is <b>bold</b>";
+
+// Outputs: A 'quote' is &lt;b&gt;bold&lt;/b&gt;
+echo htmlentities($str);
+
+$new = htmlspecialchars("<a href='test'>Test</a>", ENT_QUOTES);
+echo $new; // &lt;a href=&#039;test&#039;&gt;Test&lt;/a&gt;    
+```
 
 
 Referência: 
