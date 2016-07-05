@@ -93,8 +93,8 @@ if($emailValido){
   // Email inválido
 }
 
-if($_POST['telefone'] != null){
- // Telefone foi informado
+if($_POST['telefone'] !== null){
+ // Telefone informado
 }
 
 ```
