@@ -118,6 +118,8 @@ Referência:
 * http://codigofonte.uol.com.br/artigos/utilizando-php-para-validar-dados-passados-pelo-usuario
 * http://www.php.net/manual/pt_BR/ref.filter.php
 * http://php.net/manual/pt_BR/function.filter-input.php
+* http://php.net/manual/pt_BR/function.htmlentities.php
+* http://php.net/manual/pt_BR/function.htmlspecialchars.php
 
 
 
