@@ -44,11 +44,11 @@ Filtra a variável com um especificado filtro, exemplo:
 ```php
 $search_html = filter_input(INPUT_GET, 'search', FILTER_SANITIZE_SPECIAL_CHARS);
 $search_url = filter_input(INPUT_GET, 'search', FILTER_SANITIZE_ENCODED);
-echo "You have searched for $search_html.\n";
-// You have searched for Me &#38; son.
+echo "Você pesquisou por $search_html.\n";
+// Você pesquisou por &#38;.
 
-echo "<a href='?search=$search_url'>Search again.</a>";
-// <a href='?search=Me%20%26%20son'>Search again.</a>
+echo "<a href='?search=$search_url'>Procurar novamente.</a>";
+// <a href='?search=Me%20%26%20son'>Procurar novamente.</a>
 ```
 
 ```php
