@@ -26,23 +26,9 @@ PHP 5.5 fornece uma API de hash de senha nativo (Password Hashing) que lida de f
 segura tanto gerando hash e verificando senhas de forma segura.
 
 
-```php
-$str = "A 'quote' is <b>bold</b>";
-
-// Outputs: A 'quote' is &lt;b&gt;bold&lt;/b&gt;
-echo htmlentities($str);
-
-$new = htmlspecialchars("<a href='test'>Test</a>", ENT_QUOTES);
-echo $new; // &lt;a href=&#039;test&#039;&gt;Test&lt;/a&gt;    
-```
-
-
 Referência: 
-* http://codigofonte.uol.com.br/artigos/utilizando-php-para-validar-dados-passados-pelo-usuario
-* http://www.php.net/manual/pt_BR/ref.filter.php
-* http://php.net/manual/pt_BR/function.filter-input.php
-* http://php.net/manual/pt_BR/function.htmlentities.php
-* http://php.net/manual/pt_BR/function.htmlspecialchars.php
+* http://php.net/manual/pt_BR/faq.passwords.php
+* http://php.net/manual/pt_BR/book.password.php#book.password
 
 
 
