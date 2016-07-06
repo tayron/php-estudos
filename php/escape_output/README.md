@@ -4,8 +4,6 @@ Toda exibição de dados na tela deve ser tratada para que nenhum código malici
 para isso o PHP oferece funções de tratamento de string como htmlspecialchars, htmlentities que convertem 
 todos os caracteres que fazem parte de comandos a serem executados em caracteres especiais.
 
-<br />
-
 Exemplo:
 
 * '&' (ampersand) torna-se '&amp;'
@@ -13,8 +11,6 @@ Exemplo:
 * ''' (aspas simples) torna-se '&#039;'
 * '<' (menor que) torna-se '&lt;'
 * '>' (maior que) torna-se '&gt;'
-
-<br />
 
 Exemplo #1 htmlspecialchars() exemplo
 
@@ -34,6 +30,7 @@ exibida corretamente para o usuário evitando que algum código maliciodo armaze
 estring não seja processada, ou que determinada informação apareça corretamente ou que ela 
 apareceça apenas se determinada condição for atendida.
 
+<br />
 
 Referências:
 
