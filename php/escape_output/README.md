@@ -37,3 +37,4 @@ que códigos malíciosos não sejam processados tanto pelo próprio PHP ou inter
 Referências:
 
  * http://php.net/manual/pt_BR/function.htmlspecialchars.php
+ * http://php.net/manual/pt_BR/function.htmlentities.php
