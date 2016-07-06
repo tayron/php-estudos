@@ -6,11 +6,13 @@ todos os caracteres que fazem parte de comandos a serem executados em caracteres
 
 Exemplo:
 
+```php
 * '&' (ampersand) torna-se '&amp;'
 * '"' (aspas dupla) torna-se '&quot;'
 * ''' (aspas simples) torna-se '&#039;'
 * '<' (menor que) torna-se '&lt;'
 * '>' (maior que) torna-se '&gt;'
+```
 
 Exemplo #1 htmlspecialchars() exemplo
 
