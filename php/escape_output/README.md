@@ -23,7 +23,7 @@ echo $new; // &lt;a href=&#039;test&#039;&gt;Test&lt;/a&gt;
 ```
 
 No exemplo acima não aparecerá um link na pagina para o usuário mas sim o texto 
-exatamente como ele está armazenado na string: ```html<a href='test'>Test</a>```;
+exatamente como ele está armazenado na string: ```<a href='test'>Test</a>```;
 
 É possível utilizar expressões regulares para tratar uma saída, condicionais, funções como
 strlen(), is_null entre outras disponíveis no PHP. De acordo com a necessidade o 
