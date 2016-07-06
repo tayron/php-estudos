@@ -26,11 +26,11 @@ No exemplo acima não aparecerá um link na pagina para o usuário mas sim o tex
 exatamente como ele está armazenado na string: ```<a href='test'>Test</a>```;
 
 É possível utilizar expressões regulares para tratar uma saída, condicionais, funções como
-strlen(), is_null() entre outras disponíveis no PHP. De acordo com a necessidade o 
-PHP disponibiliza vários recursos para tratamento desses dados para que seja seja 
-exibida corretamente para o usuário evitando que algum código maliciodo armazenado nesta
-estring não seja processada, ou que determinada informação apareça corretamente ou que ela 
-apareceça apenas se determinada condição for atendida.
+strlen(), is_null() entre outras disponíveis no PHP. 
+
+De acordo com a necessidade o PHP disponibiliza vários recursos para tratamento de dados, 
+para que seja possível exibir corretamente a informação na tela para o usuário evitando 
+que códigos malíciosos não sejam processados tanto pelo próprio PHP ou interpretados pelo navegador.
 
 <br />
 
