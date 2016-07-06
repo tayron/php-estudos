@@ -25,6 +25,7 @@ muitos profissionais de segurança sugerem fortemente contra a sua utilização 
 PHP 5.5 fornece uma API de hash de senha nativo (Password Hashing) que lida de forma 
 segura tanto gerando hash e verificando senhas de forma segura.
 
+<br />
 
 Referência: 
 * http://php.net/manual/pt_BR/faq.passwords.php
