@@ -22,6 +22,8 @@ Com técnicas modernas e equipamento de informática, tornou-se trivial de "for�
 Por causa da rapidez com que um computador moderno pode "inverter" esses algoritmos de hash, 
 muitos profissionais de segurança sugerem fortemente contra a sua utilização para hash da senha.
 
+# Password Hashing
+
 PHP 5.5 fornece uma API de hash de senha nativo (Password Hashing) que lida de forma 
 segura tanto gerando hash e verificando senhas de forma segura.
 
