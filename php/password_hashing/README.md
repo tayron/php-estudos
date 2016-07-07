@@ -47,7 +47,7 @@ $options = [
     'cost' => 7,
     'salt' => 'BCryptRequires22Chrcts',
 ];
-echo password_hash("rasmuslerdorf", PASSWORD_BCRYPT, $options) . "\n";
+echo password_hash("123456", PASSWORD_BCRYPT, $options) . "\n";
 // $2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq
 ```
 
@@ -57,7 +57,7 @@ echo password_hash("rasmuslerdorf", PASSWORD_BCRYPT, $options) . "\n";
 // Valor salvo no banco de dados
 $hash = '$2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq';
 // Senha digitada pelo usuário
-$senha = 'rasmuslerdorf';
+$senha = '123456';
 if (password_verify($senha, $hash)) {
   echo 'Senha correta';
 } else {
