@@ -27,7 +27,7 @@ muitos profissionais de segurança sugerem fortemente contra a sua utilização 
 PHP 5.5 fornece uma API de hash de senha nativo (Password Hashing) que lida de forma 
 segura tanto gerando hash e verificando senhas de forma segura.
 
-O objetivo principal dessa API é padronizar/facilitar o trabalho de crypt.
+O objetivo principal dessa API é padronizar/facilitar o trabalho de [crypt](http://php.net/crypt).
 
 Com essa nova api, foram criadas quatro novas funções:
 
@@ -36,21 +36,34 @@ Com essa nova api, foram criadas quatro novas funções:
 * [password_needs rehash](http://php.net/password_needs_rehash)
 * [password_verify](http://php.net/password_verify)
 
+# password_hash
+
 ```php
-    // Usando as opções default
-    echo password_hash("rasmuslerdorf", PASSWORD_DEFAULT) . "\n";
-    // $2y$10$.vGA1O9wmRjrwAVXD98HNOgsNpDczlqm3Jq7KnEd1rVAGv3Fykk1a
-    // Definindo o custo e o salt
-    $options = [
-        'cost' => 7,
-        'salt' => 'BCryptRequires22Chrcts',
-    ];
-    echo password_hash("rasmuslerdorf", PASSWORD_BCRYPT, $options) . "\n";
-    // $2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq
+// Usando as opções default
+echo password_hash("rasmuslerdorf", PASSWORD_DEFAULT) . "\n";
+// $2y$10$.vGA1O9wmRjrwAVXD98HNOgsNpDczlqm3Jq7KnEd1rVAGv3Fykk1a
+// Definindo o custo e o salt
+$options = [
+    'cost' => 7,
+    'salt' => 'BCryptRequires22Chrcts',
+];
+echo password_hash("rasmuslerdorf", PASSWORD_BCRYPT, $options) . "\n";
+// $2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq
 ```
 
+# password_verify
 
-
+```php
+// Valor salvo no banco de dados
+$hash = '$2y$07$BCryptRequires22Chrcte/VlQH0piJtjXl.0t1XkA8pw9dMXTpOq';
+// Senha digitada pelo usuário
+$senha = 'rasmuslerdorf';
+if (password_verify($senha, $hash)) {
+  echo 'Senha correta';
+} else {
+  echo 'Senha incorreta';
+}
+```
 
 <br />
 
