@@ -6,4 +6,6 @@ Meça a importância dos dados carregados pelas suas sessões e tome medidas adi
 
 Existem várias maneiras de vazar um id de uma sessão para terceiros. Um id de sessão vazado permite a terceiros acessar a todos os recursos que estão associados ao id específico. Primeiro, URLs carregando ids de sessão. Se você criar um link com um site externo, a URL inclusa no id de sessão deve ser guardada nos logs de referência do site externo. Segundo, um ataque mais ativo pode escutar ao seu tráfego de rede. Se ele não for criptografado, os ids de sessão irão passar como texto simples pela sua rede. A solução aqui é implementar SSL em seu servidor e tornar obrigatório para os seus usuários. 
 
-Referência: http://php.net/manual/pt_BR/session.security.php
+<br />
+Referência: 
+* http://php.net/manual/pt_BR/session.security.php
