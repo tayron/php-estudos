@@ -55,6 +55,8 @@ Observe que no exemplo acima foi verificado se não houve erro no upload, valida
 e o tipo de arquivo. Com isso garanto que o arquivo do tipo esperado será aquele enviado pelo 
 usuário.
 
+<br />
+
 Referências:
 
  * http://blog.thiagobelem.net/upload-de-arquivos-com-php
