@@ -67,7 +67,7 @@ if (password_verify($senha, $hash)) {
 
 <br />
 
-Referência: 
+Referências: 
 * http://php.net/manual/pt_BR/faq.passwords.php
 * http://php.net/manual/pt_BR/book.password.php#book.password
 * http://blog.thiagobelem.net/php-5-5-api-de-senhas
