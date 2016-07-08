@@ -66,4 +66,6 @@ foreach($authors as $author){
 }
 ```
 
+<br />
+
 Ref.: http://php.net/manual/pt_BR/class.domdocument.php
