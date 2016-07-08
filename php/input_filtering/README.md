@@ -13,7 +13,7 @@ explorem brechas na validação do lado cliente para provocar danos no sistema. 
 vários dos filtros existentes simplificam o processo de validação, 
 que geralmente é feito com funções e expressões regulares complexas. e são elas:
 
-1) filter_var ( mixed $variable [[, int $filter [[, mixed $options ]]]] ) - PHP 5 >= 5.2.0, PHP 7
+# 1) filter_var ( mixed $variable [[, int $filter [[, mixed $options ]]]] ) - PHP 5 >= 5.2.0, PHP 7
 Filtra a variável com um especificado filtro, exemplo:
 
 ```php
@@ -36,11 +36,10 @@ Do mesmo grupo de filtros  temos também:
 * filter_var_array — Obtêm múltiplas variáveis e opcionalmente as filtra
 
 
-
-
-2) filter_input ( int $type , string $variable_name [, int $filter [, mixed $options ]] ) - PHP 5 >= 5.2.0, PHP 7
+# 2) filter_input ( int $type , string $variable_name [, int $filter [, mixed $options ]] ) - PHP 5 >= 5.2.0, PHP 7
 Filtra a variável com um especificado filtro, exemplo:
 
+Exemplo 1:
 ```php
 $search_html = filter_input(INPUT_GET, 'search', FILTER_SANITIZE_SPECIAL_CHARS);
 $search_url = filter_input(INPUT_GET, 'search', FILTER_SANITIZE_ENCODED);
@@ -51,10 +50,12 @@ echo "<a href='?search=$search_url'>Procurar novamente.</a>";
 // <a href='?search=Me%20%26%20son'>Procurar novamente.</a>
 ```
 
+Exemplo 2:
 ```php
 var_dump(filter_input(INPUT_POST, 'var', FILTER_DEFAULT , FILTER_REQUIRE_ARRAY));
 ```
 
+Exemplo 3:
 ```php
 class myValidator
 {
@@ -75,7 +76,7 @@ Do mesmo grupo de filtros  temos também:
 * filter_input_array() - Obtem variáveis externas e opcionalmente as filtra
 * filter_var_array() - Obtêm múltiplas variáveis e opcionalmente as filtra
 
-2) isset, is_null, etc...
+# 2) isset, is_null, etc...
 É comum ver dados de serem validados utilizando funções e expressões que verifica 
 se um deteminado dado foi passado em branco, nulo, etc...
 
@@ -113,8 +114,10 @@ $new = htmlspecialchars("<a href='test'>Test</a>", ENT_QUOTES);
 echo $new; // &lt;a href=&#039;test&#039;&gt;Test&lt;/a&gt;    
 ```
 
+<br />
 
-Referência: 
+Referências: 
+
 * http://codigofonte.uol.com.br/artigos/utilizando-php-para-validar-dados-passados-pelo-usuario
 * http://www.php.net/manual/pt_BR/ref.filter.php
 * http://php.net/manual/pt_BR/function.filter-input.php
