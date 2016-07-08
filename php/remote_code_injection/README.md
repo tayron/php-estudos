@@ -14,4 +14,7 @@ O alvo mais óbvio para um ataque de injeção de código são as funções incl
 
 O parâmetro de caminho também podem ser vulneráveis ​​a uma passagem de diretório ou inclusão remota de arquivos. Usando a seqüência de ../ ou .. (ponto-ponto-slash) em um caminho permite que um atacante para navegar para quase qualquer arquivo acessível para o processo PHP. As funções acima também aceitará um URL na configuração padrão do PHP, a menos que XXX é desativado.
 
-Referência: http://phpsecurity.readthedocs.io/en/latest/Injection-Attacks.html#code-injection-also-remote-file-inclusion
+<br />
+
+Referência: 
+ * http://phpsecurity.readthedocs.io/en/latest/Injection-Attacks.html#code-injection-also-remote-file-inclusion
