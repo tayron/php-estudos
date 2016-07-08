@@ -13,7 +13,7 @@ explorem brechas na validação do lado cliente para provocar danos no sistema. 
 vários dos filtros existentes simplificam o processo de validação, 
 que geralmente é feito com funções e expressões regulares complexas. e são elas:
 
-# 1) filter_var ( mixed $variable [[, int $filter [[, mixed $options ]]]] ) - PHP 5 >= 5.2.0, PHP 7
+# 1) filter_var ( mixed $variable [[, int $filter [[, mixed $options ]]]] )
 Filtra a variável com um especificado filtro, exemplo:
 
 ```php
@@ -36,7 +36,7 @@ Do mesmo grupo de filtros  temos também:
 * filter_var_array — Obtêm múltiplas variáveis e opcionalmente as filtra
 
 
-# 2) filter_input ( int $type , string $variable_name [, int $filter [, mixed $options ]] ) - PHP 5 >= 5.2.0, PHP 7
+# 2) filter_input ( int $type , string $variable_name [, int $filter [, mixed $options ]] )
 Filtra a variável com um especificado filtro, exemplo:
 
 Exemplo 1:
