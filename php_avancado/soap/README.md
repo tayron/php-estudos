@@ -9,6 +9,8 @@ Para se trabalhar com SOAP no PHP deve-se ter o módulo "php_soap" habilitado no
 
 Para criação de servidor SOAP é comum a utilização da biblioteca NuSOAP que é uma bilioteca em PHP para contrução de webservice baseado em SOAP. A grande vantagem de se utilizar esta biblioteca é a facilidade que ela traz na hora de construir o servidor e o fato dela construir dinamicamente o wsdl.
 
+*Observação:* O exemplo abaixo requer a biblioteca Nusoap no diretório: /lib/*
+
 servidor.php
 ```php
 require_once('lib/nusoap.php');
@@ -37,7 +39,7 @@ $server->register(
 $server->service(file_get_contents('php://input'));
 ```
 
-$cliente.php
+cliente.php
 ```php
 ini_set('soap.wsdl_cache_enabled', '0');
 $client = new SoapClient('http://localhost/php/soap/nusoap/servidor.php?wsdl');
@@ -120,7 +122,7 @@ cliente.php
 
 <br />
 
-**Observação: ** A utilização do Objeto SoapServer requer a criação do arquivo WSDL manualmente enquanto a biblioteca NuSoap cria este arquivo dinamicamente.
+*Observação:* A utilização do Objeto SoapServer requer a criação do arquivo WSDL manualmente enquanto a biblioteca NuSoap cria este arquivo dinamicamente.
 
 <br />
 
