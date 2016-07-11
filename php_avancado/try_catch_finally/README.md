@@ -9,7 +9,7 @@ O objeto lançado precisa ser uma instância da classe Exception ou uma subclass
 **execoes.php**
 <br />
 Aqui temos um conjunto de exceções personalizadas para que sua utilização se encaixe melhor dentro de um contexto
-```
+```php
 /**
  * 
  */
@@ -19,6 +19,7 @@ class UsuarioNaoEncontradoException extends Exception
         parent::__construct($message, $code, $previous);
     }
 }
+
 /**
  * 
  */
@@ -28,6 +29,7 @@ class DadosNaoGravadoNoWebserviceItauException extends Exception
         parent::__construct($message, $code, $previous);
     }
 }
+
 /**
  * 
  */
@@ -37,6 +39,7 @@ class ErroGraveException extends Exception
         parent::__construct($message, $code, $previous);
     }
 }
+
 /**
  * 
  */
@@ -65,6 +68,7 @@ class Processamento
      * @var type
      */
     private $usuario;
+    
     /**
      *
      * @throws ErroGraveException
@@ -85,6 +89,7 @@ class Processamento
             $this->limparArquivosTemporarios();
         }
     }
+    
     /**
      *
      * @param array $usuarios
@@ -97,6 +102,7 @@ class Processamento
             throw new DadosNaoGravadoNoWebserviceItauException();
         }
     }
+    
     /**
      * 
      * @throws ErroAoLimparDadosTemprariosException
