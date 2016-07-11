@@ -6,10 +6,27 @@ Método simplexml_load_string
 
 Método que interpreta um script XML e o transforma em um objeto SimpleXMLElement.
 
+```php
+$xml = "<books>
+    <book>
+        <author>Jack Herrington</author>
+        <title>PHP Hacks</title>
+        <publisher>O'Reilly</publisher>
+    </book>
+    <book>
+        <author>Jack Herrington</author>
+        <title>Podcasting Hacks</title>
+        <publisher>O'Reilly</publisher>
+    </book>
+</books>";
+$books = simplexml_load_string($xml);
+foreach ($books as $book) {
+    echo "$book->title - $book->author - $book->publisher <br />";
+}
+```
+
 # simplexml_load_file
 Método que interpreta um arquivo XML e o transforma em um objeto SimpleXMLElement
-
-Exemplo de utilização:
 
 Arquivo books.xml
 ```php
