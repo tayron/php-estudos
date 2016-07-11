@@ -47,7 +47,7 @@ print_r($client->somar(5, 10));
 ```
 
 #SoapServer
-Podemos também criar um webservice utilizando o Objeto SoapServer
+Podemos também criar um webservice utilizando o objeto SoapServer
 
 servidor.php
 ```php
