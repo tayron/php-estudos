@@ -2,8 +2,7 @@
 Objeto retornado pelos métodos simplexml_load_string e simplexml_load_file com os dados do xml pronto para serem processados.
 Ambas funções retornam um objeto da classe SimpleXMLElement com propriedades contendo os dados do documento XML, ou FALSE em caso de falha. Também podem retornar um E_WARNING caso seja encontrado erro no XML.
 
-Método simplexml_load_string
-
+# Método simplexml_load_string
 Método que interpreta um script XML e o transforma em um objeto SimpleXMLElement.
 
 ```php
@@ -26,7 +25,7 @@ foreach ($books as $book) {
 }
 ```
 
-# simplexml_load_file
+# Método simplexml_load_file
 Método que interpreta um arquivo XML e o transforma em um objeto SimpleXMLElement
 
 Arquivo books.xml
