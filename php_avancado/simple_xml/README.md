@@ -52,9 +52,9 @@ foreach ($books as $book) {
 }
 ```
 
+<br />
 
-
-Utilize a função libxml_use_internal_errors() para suprimir todos os erros XML e a função libxml_get_errors() para iterar sobre eles posteriormente.
+**Observação:** Utilize a função libxml_use_internal_errors() para suprimir todos os erros XML e a função libxml_get_errors() para iterar sobre eles posteriormente.
 
 <br />
 
