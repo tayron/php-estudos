@@ -19,6 +19,7 @@ $xml = "<books>
         <publisher>O'Reilly</publisher>
     </book>
 </books>";
+
 $books = simplexml_load_string($xml);
 foreach ($books as $book) {
     echo "$book->title - $book->author - $book->publisher <br />";
@@ -61,6 +62,3 @@ Utilize a função libxml_use_internal_errors() para suprimir todos os erros XML
 Referências: 
 * http://php.net/manual/pt_BR/function.simplexml-load-string.php
 * http://php.net/manual/pt_BR/function.simplexml-load-file.php
-
-
-
