@@ -122,7 +122,9 @@ try{
 ```
 
 
-Em resumo uma exceção é um recurso para se tomar decisão, tratar fluxo, delegar mensagens de erros para quem for de responsabilidade trata-las.
+<br />
+
+Em resumo uma exceção é um recurso para se **tomar decisão**, **tratar fluxo**, **delegar responsabilidades** para que alguém possa trata-la.
 
 <br />
 Referência: 
