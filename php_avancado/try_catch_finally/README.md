@@ -6,7 +6,8 @@ O objeto lançado precisa ser uma instância da classe Exception ou uma subclass
 
 #Exemplo de utilização
 
-***execoes.php***
+**execoes.php**
+<br />
 Aqui temos um conjunto de exceções personalizadas para que sua utilização se encaixe melhor dentro de um contexto
 ```
 /**
@@ -48,6 +49,7 @@ class ErroAoLimparDadosTemprariosException extends Exception
 ```
 
 **Processamento.php**
+<br />
 Aqui temos uma classe de exemplo que irá lançar exeções conforme a necessidade
 ```php
 require_once('excecoes.php');
@@ -110,6 +112,7 @@ class Processamento
 ```
 
 **index.php**
+<br />
 Script que faz uso do objeto processamento e faz tratamento das exceções lançadas.
 
 ```php
