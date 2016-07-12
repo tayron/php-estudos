@@ -9,13 +9,13 @@ quais tipos de parametros  ele recebe e quais os retornos e tratamentos de erros
 
 A especificação é como um manual de utilização semelhante a um manual que encontramos quando compramos algum equipamento novo, 
 pois seu objetivo é auxiliar o usuário o manuseio de seus recursos e como tirar maior proveito. Portanto vale lembrar que 
-o foco da especificação técnica (manual) está no usuário final.
+o foco da especificação técnica (manual) está no cliente que irá consumir o serviço.
+
+Existem ferramentas ( como [Swagger](http://blog.caelum.com.br/modelando-apis-rest-com-swagger) ) que nos auxiliam 
+na criação tanto do webservice como tambem na geração da especificação técnica.
 
 # Webservice SOAP
 
 Em um Web Service do estilo SOAP temos o WSDL, que funciona como uma documentação (para máquinas) do serviço, 
 facilitando a geração automatizada dos clientes que vão consumi-lo. Além disso, podemos modelar nosso serviço escrevendo o 
-WSDL, em uma abordagem conhecida como Contract-First. 
-
-Existem ferramentas ( como [Swagger](http://blog.caelum.com.br/modelando-apis-rest-com-swagger) ) que nos auxiliam 
-na criação tanto do webservice como tambem na geração da especificação técnica.
+WSDL, em uma abordagem conhecida como Contract-First.
