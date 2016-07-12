@@ -17,5 +17,5 @@ Em um Web Service do estilo SOAP temos o WSDL, que funciona como uma documentaç
 facilitando a geração automatizada dos clientes que vão consumi-lo. Além disso, podemos modelar nosso serviço escrevendo o 
 WSDL, em uma abordagem conhecida como Contract-First. 
 
-Existem ferramentas (como (Swagger)[http://blog.caelum.com.br/modelando-apis-rest-com-swagger/]) que nos auxiliam 
+Existem ferramentas (como [Swagger](http://blog.caelum.com.br/modelando-apis-rest-com-swagger)) que nos auxiliam 
 na criação tanto do webservice como tambem na geração da especificação técnica.
