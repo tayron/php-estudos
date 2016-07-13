@@ -23,10 +23,10 @@ por ser mais leve e ter a capacidade de transmitir dados diretamente via HTTP.
 
 Com isso quaando quisermos um serviço para cadastrar um cliente teremos serviços semelhantes a:
 
-1) http://api.dominio.com.br/cliente
-2) http://api.dominio.com.br/cliente/2
-3) http://api.dominio.com.br/cliente/1/contato
-4) http://api.dominio.com.br/cliente/1/compra/22/item/5
+1. http://api.dominio.com.br/cliente
+2. http://api.dominio.com.br/cliente/2
+3. http://api.dominio.com.br/cliente/1/contato
+4. http://api.dominio.com.br/cliente/1/compra/22/item/5
 
 <br />
 
