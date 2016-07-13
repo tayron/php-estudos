@@ -13,8 +13,38 @@ A construção de Web services com a abordagem RESTful está surgindo como uma a
 popular ao uso de tecnologias baseadas em SOAP para implantação de serviços na Internet, 
 por ser mais leve e ter a capacidade de transmitir dados diretamente via HTTP.
 
-#Aqui estão alguns códigos de resposta HTTP, que geralmente são utilizado com REST:
+# Rest é baseado nos verbos HTTP como por exemplo:
+
+* **GET:** Retorna um recurso existente
+* **POST:** Cria um novo recurso
+* **PUT:** Cria ou substitiu(FULL UPDATE) um recurso
+* **PATCH:** Atualiza parte do recurso
+* **DELETE:** Delete um recurso
+
+Com isso quaando quisermos um serviço para cadastrar um cliente teremos serviços semelhantes a:
+
+1) http://api.dominio.com.br/cliente
+2) http://api.dominio.com.br/cliente/2
+3) http://api.dominio.com.br/cliente/1/contato
+4) http://api.dominio.com.br/cliente/1/compra/22/item/5
+
 <br />
+
+Com se fizermos uam requisição via get para o item 1, o serviço deverá retornar uma lista de clientes,
+mas se fizermos uma requisição POST para o item 1 passando os dados do usuário 
+o serviço deverá criar um novo cliente no banco de dados.
+
+<br />
+
+Observe que também é possível criar mapas de relacionamento igual mostrado no item 3 e 4. 
+No item 3 o serviço deverá retornar os dados de contato do cliente de ID 1 enquando o item 4
+deverá retornar o item 4 adiquiro pelo cliente 1 através da compra de ID 22.
+
+
+Aqui estão alguns códigos de resposta HTTP, que geralmente são utilizado com REST:
+
+<br />
+
 ```php
 200 OK
 ```
