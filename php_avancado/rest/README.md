@@ -21,7 +21,7 @@ por ser mais leve e ter a capacidade de transmitir dados diretamente via HTTP.
 * **PATCH:** Atualiza parte do recurso
 * **DELETE:** Delete um recurso
 
-Com isso quaando quisermos um serviço para cadastrar um cliente teremos serviços semelhantes a:
+Com isso quando ao mapear serviços rests eles deverão ficar semelhante aos exemplos abaixo:
 
 1. http://api.dominio.com.br/cliente
 2. http://api.dominio.com.br/cliente/2
