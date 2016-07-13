@@ -13,7 +13,7 @@ A construção de Web services com a abordagem RESTful está surgindo como uma a
 popular ao uso de tecnologias baseadas em SOAP para implantação de serviços na Internet, 
 por ser mais leve e ter a capacidade de transmitir dados diretamente via HTTP.
 
-# Rest é baseado nos verbos HTTP como por exemplo:
+**Rest é baseado nos verbos HTTP como por exemplo:**
 
 * **GET:** Retorna um recurso existente
 * **POST:** Cria um novo recurso
