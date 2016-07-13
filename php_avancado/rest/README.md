@@ -30,8 +30,8 @@ Com isso quando ao mapear serviços rests eles deverão ficar semelhante aos exe
 
 <br />
 
-Com se fizermos uam requisição via get para o item 1, o serviço deverá retornar uma lista de clientes,
-mas se fizermos uma requisição POST para o item 1 passando os dados do usuário 
+Ao fazer uma requisição via GET para o item 1, o serviço deverá retornar uma lista de clientes,
+mas se fizermos uma requisição via POST para o item 1 passando os dados do usuário 
 o serviço deverá criar um novo cliente no banco de dados.
 
 <br />
@@ -40,55 +40,54 @@ Observe que também é possível criar mapas de relacionamento igual mostrado no
 No item 3 o serviço deverá retornar os dados de contato do cliente de ID 1 enquando o item 4
 deverá retornar o item 4 adiquiro pelo cliente 1 através da compra de ID 22.
 
-
-Aqui estão alguns códigos de resposta HTTP, que geralmente são utilizado com REST:
+O cliente ao consumir o webservice deverá tratar o retorno da requisição através dos códigos de respostas do HTTP, exemplo:
 
 <br />
 
+1. Essa resposta indica que a requisição foi bem sucedida. 
 ```php
 200 OK
 ```
 
-Essa resposta indica que a requisição foi bem sucedida. 
+2. Este indica que a requisição e a criação de um recurso foi bem sucedidas. 
 ```php
 201 criação OK
 ```
 
-Este indica que a requisição e a criação de um recurso foi bem sucedidas. 
-É utilizado para confirmar se as requisições PUT ou POST foram bem sucedidas.
+2. É utilizado para confirmar se as requisições PUT ou POST foram bem sucedidas.
 ```php
 400 solicitação inválida
 ```
 
-A requisição não foi feita corretamente. Isso acontece especialmente com requisições 
+3. A requisição não foi feita corretamente. Isso acontece especialmente com requisições 
 POST e PUT, quando as informações não são validadas, ou estão no formato errado.
 ```php
 404 página não encontrada
 ```
 
-Essa resposta indica que o recurso requisitado não pode ser encontrado. 
+4. Essa resposta indica que o recurso requisitado não pode ser encontrado. 
 Essa reposta é geralmente utilizada para as requisições que apontam para uma URL inexistente.
 ```php
 401 não autorizado
 ```
 
-Esse erro indica que você precisa primeiro estar autenticado para acessar o recurso.
+5. Esse erro indica que você precisa primeiro estar autenticado para acessar o recurso.
 ```php
 405 método não permitido
 ```
 
-O método HTTP utilizado não é suportado por este recurso.
+6. O método HTTP utilizado não é suportado por este recurso.
 ```php
 409 conflito
 ```
 
-Este indica um conflito na requisição. Por exemplo, você está utilizando uma 
+7. Este indica um conflito na requisição. Por exemplo, você está utilizando uma 
 requisição PUT para criar o mesmo recurso duas vezes.
 ```php
 500 erro interno do servidor
 ```
 
-Quando todos os outros falham; geralmente, o código de reposta 500 é apresentado 
+Quando todos os outros falham; geralmente, o código de reposta **500** é apresentado 
 quando o processamento falha devido a circunstâncias do servidor, o que causa erro no servidor.
 
 <br />
