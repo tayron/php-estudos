@@ -18,8 +18,25 @@ Para usar o plugin criado acima de nome "janela" basta seguir o exemplo abaixo:
 
 ```php
 $(document).ready(function() {
-    $.janela('Hello World');
+    $('body').janela('Hello World');
 });
 ```
 
 Ao utilizar o plugin 'janela' deverá abrir uma janela (alert) com a mensagem "Hello World".
+
+Portanto sempre que usarmos um plugin devemos chamar por seu nome logo após 
+referenciar um objeto em nosso DOM ```php $('div').NOMEPLUGIN()```.
+
+<br />
+
+É importante lembrar que os arquivos javascript e css devem ser carregados no HTML, 
+onde os arquivos css são carregados no HEAD da página e os arquivos javascript logo após a chamada do arquivo do Jquery.
+
+**Usando o plugin tooltip em um campo input de um formulário:**
+```php
+$(function() {
+    $(".inputNome").tooltip();
+});
+```
+
+
