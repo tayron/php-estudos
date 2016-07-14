@@ -91,5 +91,5 @@ $request  = $client->post('users', $headers, $data);
 $response = $request->send();
 ```
 
-(Parar acesso à documentação do Guzzle clique aqui)[http://guzzlephp.org/]
+[Parar acesso à documentação do Guzzle clique aqui.](http://guzzlephp.org)
 
