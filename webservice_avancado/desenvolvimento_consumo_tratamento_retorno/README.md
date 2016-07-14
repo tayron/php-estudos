@@ -4,17 +4,42 @@ Desenvolvimento de um webservice de dá através do mapeamento de serviços que 
 deverá expor, podendo este serviço ser RESTFULL ou Soap. Como mensionado no Tópico sobre 
 [REST](https://github.com/tayron/estudos/tree/master/php_avancado/rest) em PHP Avançado.
 <br />
-Deve-se ficar claro que REST é a arquitetura em que o webservice é implementado e RESTFULL 
-é a demonicamção para o webservice criado em cima da arquitetura REST e que um webserice rest
-pode retornar um XML ou Json enquando um Webservice SOAP retornará sempre um XML.
+Deve-se ficar claro que REST é a arquitetura em cima do HTTP e RESTFULL 
+é quando todo conceito (boas práticas) é implementado no serviço.
+Este tipo de arquitetura permite que o webservice retorne praticamente qualquer 
+devido seu poder de retornar qualquer coisa em formato de string,
+mas usualmente costuma-se retornar um XML ou Json enquando um Webservice SOAP retornará 
+sempre um XML.
 
 # Consumo de Webservice SOAP
 
-O Consumo de um Webservice SOAP é feito através do objeto SoapClient, onde deverá ser 
+O Consumo de um Webservice SOAP pode ser feito através da biblioteca 
+[CURL](http://php.net/manual/pt_BR/book.curl.php) ou do objeto 
+[SoapClient](http://php.net/manual/pt_BR/class.soapclient.php), onde deverá ser 
 informado em seu contrutor o endereço do webservice e logo em seguida invocar o serviço 
 como se estivesse invocando um método de uma classe.
 
-**Exemplo:**
+**Exemplo com CURL**
+
+```php
+$requisicao = curl_init();
+curl_setopt($requisicao, CURLOPT_URL, $this->url_base);
+curl_setopt($requisicao, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($requisicao, CURLOPT_POST, true);
+curl_setopt($requisicao, CURLOPT_POSTFIELDS, $requisicao);
+
+$retorno = curl_exec($requisicao);
+if ($retorno === false) {
+    echo curl_error($requisicao);    
+} else {    
+    echo $retorno;
+}
+curl_close($requisicao);
+```
+
+<br />
+
+**Exemplo com SoapClient:**
 ```php
 $client = new SoapClient('http://localhost/php/soap/soap-server/inventario.wsdl');    
 $retorno = $client->calcular(5, 20);
