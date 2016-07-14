@@ -16,8 +16,8 @@ como se estivesse invocando um método de uma classe.
 
 **Exemplo:**
 ```php
-    $client = new SoapClient('http://localhost/php/soap/soap-server/inventario.wsdl');    
-    $retorno = $client->calcular(5, 20);
+$client = new SoapClient('http://localhost/php/soap/soap-server/inventario.wsdl');    
+$retorno = $client->calcular(5, 20);
 ```
 
 Ao contrário da Arquitetura REST o SOAP não tem um padrão de resposta único, com isso
