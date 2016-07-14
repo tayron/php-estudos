@@ -24,6 +24,8 @@ Ao contrário da Arquitetura REST o SOAP não tem um padrão de resposta único,
 deve-se recorrer a documentação do webservice seja via WSDL ou consultando algum outro 
 artefato para saber como são feitos os retornos para poder trata-los da melhor forma.
 
+<br />
+
 **Exemplo de um XML de retorno de um Webservice SOAP:**
 
 ```php
@@ -49,6 +51,8 @@ echo $return->Temperatura->celcius;
 ```
 
 O valor 15 deverá ser recuperado através da chamada $return->Temperatura->celcius;
+
+<br />
 
 # Consumo de Webservice RESTFULL
 
