@@ -6,12 +6,12 @@ Se você está codificando algo que talvez sirva para futuros projetos, pode ser
 Existe diversas formas de se criar plugin para JQuery mas abaixo segue um exemplo básico da criação de um:
 
 ```php
-(function( $ ){
+(function($){
     $.fn.janela = function(mensagem) 
     {
         alert(mensagem);
     }; 
-})( jQuery );
+})(jQuery);
 ```
 
 Para usar o plugin criado acima de nome "janela" basta seguir o exemplo abaixo:
