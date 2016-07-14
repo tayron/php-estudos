@@ -1,10 +1,10 @@
 #Desenvolvimento, consumo e tratamento de retorno de Webservices REST, Restful e SOAP
 
 Desenvolvimento de um webservice de dá através do mapeamento de serviços que o sistema 
-deverá expor, podendo este serviço ser Restfull ou Soap. Como mensionado no Tópico sobre 
+deverá expor, podendo este serviço ser RESTFULL ou Soap. Como mensionado no Tópico sobre 
 [REST](https://github.com/tayron/estudos/tree/master/php_avancado/rest) em PHP Avançado.
 <br />
-Deve-se ficar claro que REST é a arquitetura em que o webservice é implementado e Restfull 
+Deve-se ficar claro que REST é a arquitetura em que o webservice é implementado e RESTFULL 
 é a demonicamção para o webservice criado em cima da arquitetura REST e que um webserice rest
 pode retornar um XML ou Json enquando um Webservice SOAP retornará sempre um XML.
 
@@ -49,3 +49,43 @@ echo $return->Temperatura->celcius;
 ```
 
 O valor 15 deverá ser recuperado através da chamada $return->Temperatura->celcius;
+
+# Consumo de Webservice RESTFULL
+
+Diferente do Webservice SOAP onde o PHP disponibilza o objeto SoapClient para seu consumo,
+para o webservice rest Utilizamos a biblioteca [CURL](http://php.net/manual/en/book.curl.php).
+
+**Exemplo de utilização**
+
+```php
+$url  = 'http://server.com';
+$data = ['key' => 'value'];
+$ch   = curl_init();
+
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+
+$result = curl_exec($ch);
+
+curl_close($ch);
+```
+
+A curl fornece um client HTTP completo e flexível. Verifique a documentação da 
+curl para explorar todas as funções disponíveis e as opções para customizar as 
+requisições: (http://php.net/manual/pt_BR/book.curl.php)[http://php.net/manual/pt_BR/book.curl.php]
+
+Apesar da curl ser fácil de usar, existem bibliotecas feitas em PHP, como o Guzzle, 
+que fornecem uma camada de abstração orientada a objetos em cima da curl, tornando 
+o código muito mais legível e elegante:
+
+```php
+use Guzzle\Http\Client;
+
+$client   = new Client('http://server.com/');
+$request  = $client->post('users', $headers, $data);
+$response = $request->send();
+```
+
+(Parar acesso à documentação do Guzzle clique aqui)[http://guzzlephp.org/]
+
