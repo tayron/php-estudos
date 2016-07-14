@@ -1,15 +1,19 @@
 #Desenvolvimento, consumo e tratamento de retorno de Webservices REST, Restful e SOAP
 
-Desenvolvimento de um webservice de dá através do mapeamento de serviços que o sistema 
-deverá expor, podendo este serviço ser RESTFULL ou Soap. Como mensionado no Tópico sobre 
+Desenvolvimento de um webservice se dá através do mapeamento de serviços que o sistema 
+deverá expor, podendo este serviço ser RESTFULL ou SOAP. Como mensionado no Tópico sobre 
 [REST](https://github.com/tayron/estudos/tree/master/php_avancado/rest) em PHP Avançado.
+
 <br />
+
 Deve-se ficar claro que REST é a arquitetura em cima do HTTP e RESTFULL 
 é quando todo conceito (boas práticas) é implementado no serviço.
-Este tipo de arquitetura permite que o webservice retorne praticamente qualquer 
-devido seu poder de retornar qualquer coisa em formato de string,
-mas usualmente costuma-se retornar um XML ou Json enquando um Webservice SOAP retornará 
-sempre um XML.
+
+<br />
+
+Este tipo de arquitetura permite que o webservice retorne praticamente qualquer coisa 
+no formato de string, mas usualmente costuma-se retornar uma estrutura XML ou Json 
+enquando um Webservice SOAP retornará sempre um XML.
 
 # Consumo de Webservice SOAP
 
