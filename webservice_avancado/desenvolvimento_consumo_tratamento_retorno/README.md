@@ -39,12 +39,13 @@ artefato para saber como são feitos os retornos para poder trata-los da melhor 
 
 <br />
 
-Recuperando a temperatura atual conforme o retorno acima:
+**Recuperando a temperatura atual conforme o retorno acima:**
+
 ```php
 $client = new SoapClient('http://localhost/php/soap/soap-server/inventario.wsdl');    
 $retorno = $client->getTemperaturaAtual();
 $return = simplexml_load_string($retorno);
 echo $return->Temperatura->celcius;
-```php
+```
 
 O valor 15 deverá ser recuperado através da chamada $return->Temperatura->celcius;
