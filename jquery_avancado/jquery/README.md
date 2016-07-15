@@ -31,8 +31,6 @@ especialmente com o IE (Internet Explorer) versão menor que 9.
 
 **Exemplo**
 
-<br />
-
 Um código em Javascript puro, para atribuir o valor "5" em um elemento qualquer.
 ```php
 document.getElementById('Teste').value = 5;
