@@ -31,9 +31,15 @@ referenciar um objeto em nosso DOM ``` $('div').NOMEPLUGIN()```.
 
 #Usando plugins de terceiros
 
-É importante lembrar que todos os arquivos do plugin devem ser carregados no HTML logo após a chamada para o arquivo Jquery.
+Para usar o plugin de terceiro, deve-se adicionar seus aruqivos no projeto ou na 
+hora de carrega-los no HTML informar o caminho dos arquivos na WEB
+
+É importante lembrar que todos os arquivos javascript do plugin devem ser carregados 
+no HTML logo após a chamada para o arquivo Jquery e os arquivos css dentro do elemento 
+```<head>..</head>```
 
 **Exemplo:**
+
 ```php
 <html>
 <head>
