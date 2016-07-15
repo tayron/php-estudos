@@ -25,18 +25,35 @@ $(document).ready(function() {
 Ao utilizar o plugin 'janela' deverá abrir uma janela (alert) com a mensagem "Hello World".
 
 Portanto sempre que usarmos um plugin devemos chamar por seu nome logo após 
-referenciar um objeto em nosso DOM ```php $('div').NOMEPLUGIN()```.
+referenciar um objeto em nosso DOM ``` $('div').NOMEPLUGIN()```.
 
 <br />
 
-É importante lembrar que os arquivos javascript e css devem ser carregados no HTML, 
-onde os arquivos css são carregados no HEAD da página e os arquivos javascript logo após a chamada do arquivo do Jquery.
+É importante lembrar que todos os arquivos do plugin devem ser carregados no HTML logo após a chamada para o arquivo Jquery.
 
-**Usando o plugin tooltip em um campo input de um formulário:**
+**Exemplo:**
 ```php
-$(function() {
-    $(".inputNome").tooltip();
-});
+<html>
+<head>
+     <title>Exemplo</title>
+     <link href='/plugin/css/estilo.css' rel='stylesheet' />
+</head>
+<body>
+    <div class='content'>
+        <h1>Exemplo</h1>
+
+        <input type='text' id='inputNome' name='inputNome' />
+    </div>
+
+    <script src='/jquery.min.js'></script>
+    <script src='/plugin/js/tooltip/tooltip.min.js'></script>
+    <script>
+        $(function() {
+            $(".inputNome").tooltip();
+        });
+    </script>
+</body>
+</html>
 ```
 
 
