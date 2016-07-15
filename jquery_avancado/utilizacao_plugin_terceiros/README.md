@@ -36,7 +36,7 @@ hora de carrega-los no HTML informar o caminho dos arquivos na WEB
 
 É importante lembrar que todos os arquivos javascript do plugin devem ser carregados 
 no HTML logo após a chamada para o arquivo Jquery e os arquivos css dentro do elemento 
-```php<head>..</head>```
+```<head></head>```
 
 **Exemplo:**
 
