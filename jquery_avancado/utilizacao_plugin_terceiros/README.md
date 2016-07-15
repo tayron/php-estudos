@@ -3,6 +3,8 @@
 Há vários plugins para Jquery e a grande vantagem está no encapsulamento e reaproveitamento de código (essas são as palavras-chave). 
 Se você está codificando algo que talvez sirva para futuros projetos, pode ser uma boa encapsular tudo isso em um plugin.
 
+#Criação de Plugin
+
 Existe diversas formas de se criar plugin para JQuery mas abaixo segue um exemplo básico da criação de um:
 
 ```php
@@ -27,7 +29,7 @@ Ao utilizar o plugin 'janela' deverá abrir uma janela (alert) com a mensagem "H
 Portanto sempre que usarmos um plugin devemos chamar por seu nome logo após 
 referenciar um objeto em nosso DOM ``` $('div').NOMEPLUGIN()```.
 
-<br />
+#Usando plugins de terceiros
 
 É importante lembrar que todos os arquivos do plugin devem ser carregados no HTML logo após a chamada para o arquivo Jquery.
 
