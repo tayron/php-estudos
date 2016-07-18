@@ -3,7 +3,7 @@
 jQuery UI é um conjunto recurso para criação de interface de usuário, efeitos, 
 widgets e temas construídas em cima da Biblioteca JavaScript jQuery.
 
-O conjunto de reurso é basicamente uma coleção de funções de interface de usuário 
+O conjunto de recurso é basicamente uma coleção de funções de interface de usuário 
 que estão relacionadas e podem ser divididas em três módulos principais:
 
 * Widgets, que contêm interfaces de usuário pré-construídas e customizáveis​​.
@@ -45,14 +45,14 @@ de uma página, tais como agitá-lo, explodi-lo, e assim por diante.
 </html>
 ```
 
-Para ter acesso a lista de recursos atuais do jquery ui basta acessar a url 
+Para ter acesso a lista de recursos atuais do Jquery UI basta acessar a url 
 [https://api.jqueryui.com](https://api.jqueryui.com).
 
-Uma das facilidades que jquery ui trás é a flexibiblidade na criação de temas, 
+Uma das facilidades que Jquery UI trás é a flexibiblidade na criação de temas, 
 observando os includes dos arquivos javascript acima é possível ver a inclusão de 
 ```http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css``` que é um
 arquivo com estilo padrão para os componentes do Jquery UI. É possível baixar outros estilos através da url 
-[http://jqueryui.com/themeroller]http://jqueryui.com/themeroller ou se preferir sobrescrever os estilos do 
+[http://jqueryui.com/themeroller](http://jqueryui.com/themeroller) ou se preferir sobrescrever os estilos do 
 tema que esteja sendo utilizado em sua aplicação. 
 
 Referências:
