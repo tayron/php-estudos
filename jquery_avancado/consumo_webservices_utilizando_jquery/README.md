@@ -63,9 +63,32 @@ carregarBairro();
 
 ```
 
-Como podemos ver acima, Jquery facilita muito o trabalho no dia à dia.
+Para consumo de webservice através do Javascript é comum a utilização do Jquery para 
+consumo de informações de aplicações de terceiros, bastando informar a URL do webservice e 
+em seguida passar os parametros necessários:
+
+**Exemplo**
+
+```php
+$.ajax({
+    type: 'GET',
+    url: 'http://api.site.com.br/cliente', 
+    success: function (data, textStatus, jqXHR) {                            
+        console.info(data);
+    },
+    error: function(XMLHttpRequest, textStatus, errorThrown){
+        console.error('Deu erro');
+    }
+});
+```
+
+O Exemplo acima simula uma chamada GET ao webservice http://api.site.com.br/cliente 
+com o intuito de recuperar uma lista de clientes.
+
+
 <br />
 
 Referências: 
 
-* https://pt.wikipedia.org/wiki/JQuery
+* http://www.w3schools.com/jquery/jquery_ref_ajax.asp
+* http://api.jquery.com/jquery.ajax
