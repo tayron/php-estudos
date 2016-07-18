@@ -55,6 +55,8 @@ arquivo com estilo padrão para os componentes do Jquery UI. É possível baixar
 [http://jqueryui.com/themeroller](http://jqueryui.com/themeroller) ou se preferir sobrescrever os estilos do 
 tema que esteja sendo utilizado em sua aplicação. 
 
+<br +/>
+
 Referências:
 
 * https://jqueryui.com/
