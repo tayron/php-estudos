@@ -3,6 +3,9 @@
 Biblioteca Jquery encapsula vários recursos e um deles é uma chamada Ajax através 
 de uma interface simplificada. 
 
+<br />
+
+**Exemplo:**
 ```php
 $.ajax({
     type: 'GET',
@@ -18,7 +21,7 @@ $.ajax({
 
 <br />
 
-Fazendo chamada Ajax sem utilizar Jquery
+**Exemplo de chamada Ajax sem utilizar Jquery:**
 ```php
 var xmlHttp = GetXmlHttpObject();
 function carregarBairro() {
@@ -62,11 +65,14 @@ carregarBairro();
 
 ```
 
-Para acesso de webservice através do Javascript é comum a utilização do Jquery para 
-consumo de informações de aplicações de terceiros, bastando informar a URL do webservice e 
-em seguida passar os parametros necessários:
+Veja que sem o Auxilio do JQuery temos uma implementação mais complexa e extensa, 
+motivo pelo qual o uso dos recursos do Jquery ser tão difundido hoje. 
 
-**Exemplo**
+<br />
+
+Abaixo 
+
+**Outra implementação de consumo de webservice com Jquery**
 
 ```php
 $.ajax({
@@ -80,6 +86,9 @@ $.ajax({
     }
 });
 ```
+
+<br />
+
 Veja que fazer requisições Ajax usando Jquery é muito simples e através de seus callback
 de retorno 'success' e 'error' podemos tratar de forma clara o retorno do webservice.
 
