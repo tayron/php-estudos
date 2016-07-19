@@ -70,9 +70,7 @@ motivo pelo qual o uso dos recursos do Jquery ser tão difundido hoje.
 
 <br />
 
-Abaixo 
-
-**Outra implementação de consumo de webservice com Jquery**
+**Abaixo outra implementação de consumo de webservice com Jquery**
 
 ```php
 $.ajax({
