@@ -5,9 +5,8 @@ de uma interface simplificada.
 
 ```php
 $.ajax({
-    type: 'POST',
-    url: 'carrega_bairro.php?por=cidade', 
-    data: {estados : listaEstados},
+    type: 'GET',
+    url: 'carrega_bairro.php?por=cidade"',     
     success: function (data, textStatus, jqXHR) {                            
         console.info(data);
     },
@@ -63,7 +62,7 @@ carregarBairro();
 
 ```
 
-Para consumo de webservice através do Javascript é comum a utilização do Jquery para 
+Para acesso de webservice através do Javascript é comum a utilização do Jquery para 
 consumo de informações de aplicações de terceiros, bastando informar a URL do webservice e 
 em seguida passar os parametros necessários:
 
@@ -81,9 +80,8 @@ $.ajax({
     }
 });
 ```
-
-O Exemplo acima simula uma chamada GET ao webservice http://api.site.com.br/cliente 
-com o intuito de recuperar uma lista de clientes.
+Veja que fazer requisições Ajax usando Jquery é muito simples e através de seus callback
+de retorno 'success' e 'error' podemos tratar de forma clara o retorno do webservice.
 
 
 <br />
