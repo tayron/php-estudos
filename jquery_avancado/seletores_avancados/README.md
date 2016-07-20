@@ -24,6 +24,7 @@ Seguindo as mesmas regras do CSS também é possível selecionar elementos atrav
 ```php
 $('.campos').val()
 ```
+O Exemplo acima retornará uma lista de elementos que possuem o class **.campos**
 
 <br />
 
