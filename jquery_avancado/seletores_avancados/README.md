@@ -36,7 +36,7 @@ lista de itens encontrados podemos manipular cada um desses elementos.
 
 <br />
 
-**Exemplo:** Vamos selecionar todos os links que apontem para a url site.com.br
+Selecionando todos os links que apontem para a url site.com.br
 ```php
 $("a[href='site.com']")
 
@@ -44,14 +44,14 @@ $("a[href='site.com']")
 
 <br />
 
-Outro exemplo é selecionar vários tipos de elementos
+Selecionando vários tipos de elementos
 ```php
 $("a, #menu, h1").css('border', '1px solid #F00');
 
 ```
 
-
 <br />
+
 Um outro exemplo seria buscar todos os campos input de um formulário para aplicar 
 um determinado estilo css.
 ```php
@@ -65,3 +65,4 @@ Referências:
 
 * https://pt.wikipedia.org/wiki/JQuery
 * http://www.devmedia.com.br/introducao-aos-seletores-da-jquery/27362
+* http://tableless.com.br/jquery-seletores-personalizados
