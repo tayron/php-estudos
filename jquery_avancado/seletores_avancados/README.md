@@ -16,11 +16,12 @@ $('#email').val()
 <br />
 
 O exemplo acima recupera o valor de um elemento HTML que possua o ID "email". 
+<br />
 **Observação:** Em um documento DOM não se deve ter um ID para mais de um elemento.
 
 <br />
 
-Seguindo as mesmas regras do CSS também é possível selecionar elementos através de sua class.
+Seguindo as mesmas regras do CSS também é possível selecionar elementos através de seu class.
 
 <br />
 
@@ -31,8 +32,11 @@ $('.campos').val()
 
 <br />
 
-Seguindo os mesmos conceitos do CSS é possível fazer seleção avançadas, utilizando 
-condicionais.
+#Condicionais
+
+Podemos selecionar um ou vários elementos no DOM passando condicionais e iterando sobre a 
+lista de itens encontrados podemos manipular cada um desses elementos.
+
 
 <br />
 
