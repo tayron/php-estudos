@@ -20,8 +20,6 @@ O exemplo acima recupera o valor de um elemento HTML que possua o ID "email".
 
 Seguindo as mesmas regras do CSS também é possível selecionar elementos através de seu class.
 
-<br />
-
 **Exemplo**
 ```php
 $('.campos').val()
