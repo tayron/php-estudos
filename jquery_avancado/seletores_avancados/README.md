@@ -43,6 +43,15 @@ $("a[href='site.com']")
 ```
 
 <br />
+
+Outro exemplo é selecionar vários tipos de elementos
+```php
+$("a, #menu, h1").css('border', '1px solid #F00');
+
+```
+
+
+<br />
 Um outro exemplo seria buscar todos os campos input de um formulário para aplicar 
 um determinado estilo css.
 ```php
