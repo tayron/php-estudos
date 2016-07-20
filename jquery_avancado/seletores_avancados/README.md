@@ -12,9 +12,6 @@ de '.', etc..
 ```php
 $('#email').val()
 ```
-
-<br />
-
 O exemplo acima recupera o valor de um elemento HTML que possua o ID "email". 
 <br />
 **Observação:** Em um documento DOM não se deve ter um ID para mais de um elemento.
