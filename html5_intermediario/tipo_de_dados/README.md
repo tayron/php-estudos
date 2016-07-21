@@ -31,6 +31,11 @@ Renderização esperada:
 
 <br />
 
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.color.html)
+
+<br />
+
 # Input type = Date
 
 Cria um campo para que o usuário possa selecionar uma data.
@@ -57,6 +62,11 @@ Renderização esperada:
 
 <br />
 
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.date.html)
+
+<br />
+
 # Input type = Datetime
 Cria dois campos uma para data e outro da hora (com fuso horário), permitindo assim o usuário selecionar os dois juntos.
 
@@ -76,6 +86,11 @@ Não     Não         Não         Sim     Sim
 ```
 <br />
 
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.datetime.html)
+
+<br />
+
 #Input type = Month
 Serve para selecionar um mês e um ano.
 
@@ -93,6 +108,11 @@ Não     Não         Sim         Sim     Sim
 ```php
 <input type="month" />
 ```
+<br />
+
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.month.html)
+
 <br />
 
 # Input type = DateTime-Local
@@ -115,6 +135,11 @@ Não     Não         Não         Sim     Sim
 
 <br />
 
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.datetime-local.html)
+
+<br />
+
 # Input type = E-mail
 É um campo de entrada onde deve ser inserido um endereço de e-mail.
 
@@ -122,7 +147,7 @@ Não     Não         Não         Sim     Sim
 
 **Exemplo**
 ```php
-<input type="mail" />
+<input type="email" />
 ```
 
 <br />
@@ -132,6 +157,13 @@ Compatibilidade com navegadores:
 IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Não     Sim
 ```
+
+<br />
+
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.email.html)
+
+<br />
 
 # Input type = Number
 É utilizado para campos que devem apenas conter números, podendo ter seus limites (maior e menor valor aceitos) definidos.
@@ -151,6 +183,13 @@ IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Sim     Sim
 ```
 
+<br />
+
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.number.html)
+
+<br />
+
 # Input type = Range
 É utilizado para campos de entrada que devem receber um valor a partir de uma variação de números.
 
@@ -168,6 +207,13 @@ Compatibilidade com navegadores:
 IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Sim     Sim
 ```
+
+<br />
+
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.range.html)
+
+<br />
 
 # Input type = Search
 É usado para fazer pesquisas, mas na pratica se comporta como um campo de texto comum.
@@ -187,6 +233,13 @@ IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Sim     Não
 ```
 
+<br />
+
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.search.html)
+
+<br />
+
 # Input type = Tel
 Serve para números de telefone, mas até o momento nenhum dos principais navegadores oferece suporte a esse tipo.
 
@@ -204,6 +257,13 @@ Compatibilidade com navegadores:
 IE      Firefox     Chrome      Safari	Opera
 Não     Não         Não         Não     Não
 ```
+
+<br />
+
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.tel.html)
+
+<br />
 
 #Input type = Time 
 Permite ao usuário selecionar hora.
@@ -223,6 +283,13 @@ IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Sim     Sim
 ```
 
+<br />
+
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.time.html)
+
+<br />
+
 # Input type = Url
 É usado para campos de entrada onde você recebee um endereço URL, o valor do campo é validado automaticamente quando o formulário é enviado.
 
@@ -240,6 +307,12 @@ Compatibilidade com navegadores:
 IE      Firefox     Chrome      Safari	Opera
 Não     Sim         Sim         Sim     Sim
 ```
+
+<br />
+
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.url.html)
+
 <br />
 
 # Input type = Week
@@ -260,6 +333,10 @@ IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Sim     Sim
 ```
 
+<br />
+
+Para mais detalhes acesse: 
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.week.html)
 
 <br />
 
