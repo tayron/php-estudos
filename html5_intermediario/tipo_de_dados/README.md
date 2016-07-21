@@ -5,7 +5,9 @@ projetos cada vez mais robusto entregando cada vez mais usabilidade para o usuá
 
 Abaixo segue uma lista de novos elementos adicionados no HTML5
 
-1. **Input type = Color:** Permite ao usuário selecionar uma cor.
+# Input type = Color
+
+Permite ao usuário selecionar uma cor.
 
 <br />
 
@@ -31,7 +33,9 @@ Renderização esperada:
 
 <br />
 
-2. **Input type = Date:** Cria um campo para que o usuário possa selecionar uma data.
+# Input type = Date
+
+Cria um campo para que o usuário possa selecionar uma data.
 
 <br />
 
