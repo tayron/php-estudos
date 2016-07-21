@@ -68,6 +68,14 @@ IE      Firefox     Chrome      Safari	Opera
 Não     Não         Não         Sim     Sim
 ```
 
+<br />
+
+**Exemplo**
+```php
+<input type="datetime" />
+```
+<br />
+
 #Input type = Month
 Serve para selecionar um mês e um ano.
 
@@ -79,6 +87,13 @@ IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Sim     Sim
 ```
 
+<br />
+
+**Exemplo**
+```php
+<input type="month" />
+```
+<br />
 
 # Input type = DateTime-Local
 Permite ao usuário selecionar uma hora e data (sem fuso).
@@ -91,8 +106,24 @@ IE      Firefox     Chrome      Safari	Opera
 Não     Não         Não         Sim     Sim
 ```
 
+<br />
+
+**Exemplo**
+```php
+<input type="datetime-local" />
+```
+
+<br />
+
 # Input type = E-mail
 É um campo de entrada onde deve ser inserido um endereço de e-mail.
+
+<br />
+
+**Exemplo**
+```php
+<input type="mail" />
+```
 
 <br />
 
@@ -107,6 +138,13 @@ Não     Não         Sim         Não     Sim
 
 <br />
 
+**Exemplo**
+```php
+<input type="number" />
+```
+
+<br />
+
 Compatibilidade com navegadores:
 ```php
 IE      Firefox     Chrome      Safari	Opera
@@ -115,6 +153,13 @@ Não     Não         Sim         Sim     Sim
 
 # Input type = Range
 É utilizado para campos de entrada que devem receber um valor a partir de uma variação de números.
+
+<br />
+
+**Exemplo**
+```php
+<input type="range" />
+```
 
 <br />
 
@@ -129,6 +174,13 @@ Não     Não         Sim         Sim     Sim
 
 <br />
 
+**Exemplo**
+```php
+<input type="search" />
+```
+
+<br />
+
 Compatibilidade com navegadores:
 ```php
 IE      Firefox     Chrome      Safari	Opera
@@ -137,6 +189,13 @@ Não     Não         Sim         Sim     Não
 
 # Input type = Tel
 Serve para números de telefone, mas até o momento nenhum dos principais navegadores oferece suporte a esse tipo.
+
+<br />
+
+**Exemplo**
+```php
+<input type="tel" />
+```
 
 <br />
 
@@ -151,6 +210,13 @@ Permite ao usuário selecionar hora.
 
 <br />
 
+**Exemplo**
+```php
+<input type="time" />
+```
+
+<br />
+
 Compatibilidade com navegadores:
 ```php
 IE      Firefox     Chrome      Safari	Opera
@@ -162,13 +228,29 @@ Não     Não         Sim         Sim     Sim
 
 <br />
 
+**Exemplo**
+```php
+<input type="url" />
+```
+
+<br />
+
 Compatibilidade com navegadores:
 ```php
 IE      Firefox     Chrome      Safari	Opera
 Não     Sim         Sim         Sim     Sim
 ```
+<br />
 
-13. **Input type = Week:** Para definir uma semana e um ano.
+# Input type = Week
+Para definir uma semana e um ano.
+
+<br />
+
+**Exemplo**
+```php
+<input type="week" />
+```
 
 <br />
 
