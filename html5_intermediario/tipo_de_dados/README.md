@@ -87,6 +87,12 @@ Não     Não         Não         Sim     Sim
 
 <br />
 
+Renderização esperada: 
+<br />
+![alt text](http://www.html5tutorial.info/images/opera-datetime-local.png "Seletor de cor")
+
+<br />
+
 Para mais detalhes acesse: 
 [https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.datetime.html)
 
@@ -158,12 +164,6 @@ Compatibilidade com navegadores:
 IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Não     Sim
 ```
-
-<br />
-
-Renderização esperada: 
-<br />
-![alt text](http://www.html5tutorial.info/images/opera-datetime-local.png "Seletor de cor")
 
 <br />
 
