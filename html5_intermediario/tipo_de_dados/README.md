@@ -18,7 +18,7 @@ Não     Não         Sim         Não     Sim
 **Exemplo**
 ```php
 <input type="color" />
-```php
+```
 <br />
 
 Renderização esperada: 
