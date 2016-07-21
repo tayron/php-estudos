@@ -162,6 +162,7 @@ Não     Não         Sim         Não     Sim
 <br />
 
 Renderização esperada: 
+<br />
 ![alt text](http://www.html5tutorial.info/images/opera-datetime-local.png "Seletor de cor")
 
 <br />
