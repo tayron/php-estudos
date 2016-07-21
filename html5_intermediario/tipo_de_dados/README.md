@@ -32,6 +32,37 @@ Renderização esperada:
 <br />
 
 2. **Input type = Date:** Cria um campo para que o usuário possa selecionar uma data.
+
+<br />
+
+Compatibilidade com navegadores:
+```php
+IE      Firefox     Chrome      Safari	Opera
+Não     Não         Sim         Sim     Sim
+```
+
+<br />
+
+**Exemplo**
+```php
+<input type="date" />
+```
+<br />
+
+Renderização esperada: 
+
+<br />
+
+![alt text](http://videos.web-03.net/artigos/Ricardo_Teixeira/HTML5_Intput_Types/HTML5_Intput_Types1.jpg "Seletor de cor")
+
+<br />
+
+
+
+
+
+
+
 3. **Input type = Datetime:** Cria dois campos uma para data e outro da hora (com fuso horário), permitindo assim o usuário selecionar os dois juntos.
 4. **Input type = Month:** Serve para selecionar um mês e um ano.
 5. **Input type = DateTime-Local:** Permite ao usuário selecionar uma hora e data (sem fuso).
