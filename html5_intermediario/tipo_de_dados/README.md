@@ -10,8 +10,10 @@ Abaixo segue uma lista de novos elementos adicionados no HTML5
 <br />
 
 Compatibilidade com navegadores:
+```php
 IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Não     Sim
+```
 
 <br />
 
