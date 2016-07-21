@@ -23,10 +23,11 @@ Não     Não         Sim         Não     Sim
 ```
 <br />
 
+Renderização esperada: 
 
-**Renderização esperada:**
-[https://videos.web-03.net/artigos/Ricardo_Teixeira/HTML5_Intput_Types/HTML5_Intput_Types3.jpg](https://videos.web-03.net/artigos/Ricardo_Teixeira/HTML5_Intput_Types/HTML5_Intput_Types3.jpg)
+<br />
 
+![alt text](http://videos.web-03.net/artigos/Ricardo_Teixeira/HTML5_Intput_Types/HTML5_Intput_Types3.jpg "Seletor de cor")
 
 <br />
 
