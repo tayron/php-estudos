@@ -349,4 +349,5 @@ Para mais detalhes acesse:
 
 Referências:
 
+* https://www.w3.org
 * http://www.devmedia.com.br/novos-tipos-de-input-da-html-5/27109
