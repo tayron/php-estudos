@@ -25,8 +25,7 @@ Renderização esperada:
 
 <br />
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-[1]: http://videos.web-03.net/artigos/Ricardo_Teixeira/HTML5_Intput_Types/HTML5_Intput_Types3.jpg "Seletor de cor"
+![alt text](https://videos.web-03.net/artigos/Ricardo_Teixeira/HTML5_Intput_Types/HTML5_Intput_Types3.jpg "Seletor de cor")
 
 <br />
 
