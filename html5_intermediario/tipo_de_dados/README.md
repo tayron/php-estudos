@@ -87,7 +87,7 @@ Não     Não         Não         Sim     Sim
 
 <br />
 
-Renderização esperada: 
+Renderização esperada: <br />
 ![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_DateTime.jpg "Seletor de cor")
 
 <br />
