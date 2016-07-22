@@ -114,6 +114,12 @@ Não     Não         Sim         Sim     Sim
 ```php
 <input type="month" />
 ```
+
+<br />
+
+Renderização esperada: <br />
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Month.jpg "Imput email")
+
 <br />
 
 Para mais detalhes acesse: 
@@ -168,6 +174,11 @@ Compatibilidade com navegadores:
 IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Não     Sim
 ```
+
+<br />
+
+Renderização esperada: <br />
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Email.jpg "Imput email")
 
 <br />
 
