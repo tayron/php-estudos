@@ -5,6 +5,8 @@ projetos cada vez mais robusto entregando cada vez mais usabilidade para o usuá
 
 Abaixo segue uma lista de novos elementos adicionados no HTML5
 
+<br />
+
 # Input type = Color
 
 Permite ao usuário selecionar uma cor.
