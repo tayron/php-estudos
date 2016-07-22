@@ -27,7 +27,7 @@ Não     Não         Sim         Não     Sim
 
 Renderização esperada: 
 
-![alt text](http://videos.web-03.net/artigos/Ricardo_Teixeira/HTML5_Intput_Types/HTML5_Intput_Types3.jpg "Seletor de cor")
+![alt text](http://videos.web-03.net/artigos/Ricardo_Teixeira/HTML5_Intput_Types/HTML5_Intput_Types3.jpg)
 
 <br />
 
@@ -58,7 +58,7 @@ Não     Não         Sim         Sim     Sim
 
 Renderização esperada: 
 
-![alt text](http://videos.web-03.net/artigos/Ricardo_Teixeira/HTML5_Intput_Types/HTML5_Intput_Types1.jpg "Seletor de cor")
+![alt text](http://videos.web-03.net/artigos/Ricardo_Teixeira/HTML5_Intput_Types/HTML5_Intput_Types1.jpg)
 
 <br />
 
@@ -88,7 +88,7 @@ Não     Não         Não         Sim     Sim
 <br />
 
 Renderização esperada: <br />
-![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_DateTime.jpg "Seletor de cor")
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_DateTime.jpg)
 
 <br />
 
@@ -118,7 +118,7 @@ Não     Não         Sim         Sim     Sim
 <br />
 
 Renderização esperada: <br />
-![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Month.jpg "Imput month")
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Month.jpg)
 
 <br />
 
@@ -148,7 +148,7 @@ Não     Não         Não         Sim     Sim
 <br />
 
 Renderização esperada: <br />
-![alt text](http://www.html5tutorial.info/images/opera-datetime-local.png "Seletor de cor")
+![alt text](http://www.html5tutorial.info/images/opera-datetime-local.png)
 
 <br />
 
@@ -178,7 +178,7 @@ Não     Não         Sim         Não     Sim
 <br />
 
 Renderização esperada: <br />
-![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Email.jpg "Imput email")
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Email.jpg)
 
 <br />
 
@@ -234,6 +234,10 @@ Compatibilidade com navegadores:
 IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Sim     Sim
 ```
+<br />
+
+Renderização esperada: <br />
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Range.jpg)
 
 <br />
 
@@ -259,6 +263,10 @@ Compatibilidade com navegadores:
 IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Sim     Não
 ```
+<br />
+
+Renderização esperada: <br />
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Search.jpg)
 
 <br />
 
@@ -284,6 +292,11 @@ Compatibilidade com navegadores:
 IE      Firefox     Chrome      Safari	Opera
 Não     Não         Não         Não     Não
 ```
+
+<br />
+
+Renderização esperada: <br />
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Search.jpg)
 
 <br />
 
