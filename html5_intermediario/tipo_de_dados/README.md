@@ -118,7 +118,7 @@ Não     Não         Sim         Sim     Sim
 <br />
 
 Renderização esperada: <br />
-![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Month.jpg "Imput email")
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Month.jpg "Imput month")
 
 <br />
 
@@ -147,7 +147,7 @@ Não     Não         Não         Sim     Sim
 
 <br />
 
-Renderização esperada: 
+Renderização esperada: <br />
 ![alt text](http://www.html5tutorial.info/images/opera-datetime-local.png "Seletor de cor")
 
 <br />
@@ -204,6 +204,11 @@ Compatibilidade com navegadores:
 IE      Firefox     Chrome      Safari	Opera
 Não     Não         Sim         Sim     Sim
 ```
+
+<br />
+
+Renderização esperada: <br />
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Number.jpg)
 
 <br />
 
