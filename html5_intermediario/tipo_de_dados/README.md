@@ -88,8 +88,7 @@ Não     Não         Não         Sim     Sim
 <br />
 
 Renderização esperada: 
-<br />
-![alt text](http://www.html5tutorial.info/images/opera-datetime-local.png "Seletor de cor")
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_DateTime.jpg "Seletor de cor")
 
 <br />
 
@@ -139,6 +138,11 @@ Não     Não         Não         Sim     Sim
 ```php
 <input type="datetime-local" />
 ```
+
+<br />
+
+Renderização esperada: 
+![alt text](http://www.html5tutorial.info/images/opera-datetime-local.png "Seletor de cor")
 
 <br />
 
