@@ -320,6 +320,11 @@ Não     Não         Sim         Sim     Sim
 
 <br />
 
+Renderização esperada: <br />
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Time.jpg)
+
+<br />
+
 Para mais detalhes acesse: 
 [https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.time.html)
 
