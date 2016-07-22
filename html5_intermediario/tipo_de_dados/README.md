@@ -295,11 +295,6 @@ Não     Não         Não         Não     Não
 
 <br />
 
-Renderização esperada: <br />
-![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Search.jpg)
-
-<br />
-
 Para mais detalhes acesse: 
 [https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.tel.html)
 
@@ -350,6 +345,11 @@ Não     Sim         Sim         Sim     Sim
 
 <br />
 
+Renderização esperada: <br />
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_URL.jpg)
+
+<br />
+
 Para mais detalhes acesse: 
 [https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.url.html)
 
@@ -376,7 +376,12 @@ Não     Não         Sim         Sim     Sim
 <br />
 
 Para mais detalhes acesse: 
-[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.week.html)
+[https://www.w3.org/TR/html-markup/input.email.html](https://www.w3.org/TR/html-markup/input.url.html)
+
+<br />
+
+Renderização esperada: <br />
+![alt text](http://www.omerjaved.com/elearning/images/html-five/HTML5_Input_Type_Week.jpg)
 
 <br />
 
