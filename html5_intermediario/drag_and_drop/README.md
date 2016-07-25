@@ -17,7 +17,7 @@ Essa funcionalidade acontece porque os elementos HTML possuem uma propriedade ch
 
 <br />
 
-**Exemplo**
+#Exemplo
 
 ```php
 <img src="http://www.tayron.com.br/theme_site/img/logomarca.png" id="logomarca" draggable="true" />
