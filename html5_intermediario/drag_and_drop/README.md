@@ -33,7 +33,7 @@ Javascript, veja o exemplo funcional do Drag and Drop abaixo:
     <head>
         <title>Drag and Drop HTML5</title>
         <style type="text/css">
-            #DivDestino{width:350px; height:70px; padding:10px; border:1px solid #aaaaaa;}
+            .DivDestino{width:350px; height:70px; padding:10px; border:1px solid #aaaaaa;}
             img{cursor: move;}
         </style>
         <script type="text/javascript">
@@ -56,9 +56,11 @@ Javascript, veja o exemplo funcional do Drag and Drop abaixo:
         </script>
     </head>
     <body>
-        <div id="DivDestino" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="DivDestino" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         <br />
         <img id="LogoDrag" src="http://www.tayron.com.br/theme_site/img/logomarca.png" draggable="true" ondragstart="drag(event)" width="336" height="69" />
+	<br />
+        <div class="DivDestino" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     </body>
 </html>
 ```
