@@ -70,7 +70,7 @@ não suportar Ogg, o navegador reproduz o arquivo  MPEG-4.
 Veja também a lista [media formats supported by the audio and video elements](https://developer.mozilla.org/En/Media_formats_supported_by_the_audio_and_video_elements) 
 para mais detalhes.
 
-Também é possível especificar os codecs que o arquivo de mídia requer; isso permite 
+Também é possível especificar os codecs que o arquivo de mídia requer, isso permite 
 que o navegador faça escolhas mais inteligentes:
 
 
@@ -85,12 +85,15 @@ Aqui é especificado que o vídeo usa os codecs Dirac e Speex. Se o navegador su
 Ogg, mas não suportar os codecs especificados, o vídeo não será reproduzido.
 
 Se o atributo type não estiver especificado, o tipo de mídia é obtido no servidor e 
-é verificado se o navegador consegue reproduzi-lo; 
-se ele não pode ser renderizado, o próximo source é verificado. 
+é verificado se o navegador consegue reproduzi-lo. Se ele não pode ser renderizado, 
+o próximo source é verificado. 
+
 Se nenhum dos elementos source pode ser utilizado, um evento error é enviado para 
-o elemento video. Se o atributo type estiver especificado, ele é comparado aos 
+o elemento video. 
+
+Se o atributo type estiver especificado, ele é comparado aos 
 tipos que o navegador consegue reproduzir, e se ele não for reconhecido, 
-o servidor não é verificado; ao invés disso, o próximo source é verificado.
+o servidor não é verificado, ao invés disso, o próximo source é verificado.
 
 Veja [Media events](https://developer.mozilla.org/en/DOM/Media_events) para uma lista 
 completa de eventos relacionados a reprodução de mídia. Para detalhes sobre os 
@@ -100,11 +103,8 @@ formatos de mídia suportados por vários navegadores, veja
 
 # Controlando a reprodução de mídia
 
-https://developer.mozilla.org/pt-BR/docs/Web/HTML/Using_HTML5_audio_and_video
-
-Após a mídia ser incorporada utilizando no documento HTML utilizando os novos elementos, 
-é possível controla-los com código de JavaScript. Por exemplo, para começar (ou repetir) a 
-reprodução, você pode fazer isto:
+Após a mídia ser incorporada é possível controla-los com código de JavaScript. 
+Por exemplo, para começar (ou repetir) a reprodução, você pode fazer isto:
 
 ```php
 var v = document.getElementsByTagName("video")[0];
@@ -147,13 +147,15 @@ interno do elemento é destruído, o que para o download.
 
 # Navegando pela mídia
 
-Elementos de mídia provemsuporte para mover a posição atual para pontos específicos 
+Elementos de mídia provem suporte para mover a posição atual para pontos específicos 
 do conteúdo da mídia. Iso é feito ao definir o valor da propriedade currentTime no 
-elemento; veja HTMLMediaElement para mais detalhes sobre as propriedades do elemento. 
-Simplesmente defina o valor para o tempo, em segundos, em que você quer que a 
+elemento; veja [HTMLMediaElement](https://developer.mozilla.org/pt-BR/docs/Web/API/HTMLMediaElement) 
+para mais detalhes sobre as propriedades do elemento. 
+
+Simplesmente defina o valor para o tempo em segundos em que você quer que a 
 reprodução do vídeo continue.
 
-Você pode usar a propriedade seekable para determinar os valores em que é possível 
+Você pode usar a propriedade ```seekable``` para determinar os valores em que é possível 
 ir no momento. Essa propriedade retorna o objeto TimeRanges listando os 
 intervalos de tempo em que você pode navegar.
 
@@ -167,9 +169,9 @@ mediaElement.played.end();      // Retorna o numero de segundos que o navegador 
 
 # Especificando o intervalo de reprodução
 
-Quado especificando a URI de um elemento ```<audio>``` ou ```<video>```, você pode incluir 
+Quando é especificado a URI de um elemento ```<audio>``` ou ```<video>```, você pode incluir 
 opcionalmente informações adicionais para especificar a parte da mídia a ser reproduzida. 
-Para fazer isso, use uma hashtag ("#") seguida pela descrição do fragmento da mídia.
+Para fazer isso use uma hashtag ("#") seguida pela descrição do fragmento da mídia.
 
 O intervalo é especificado usando a sintaxe:
 
@@ -177,7 +179,7 @@ O intervalo é especificado usando a sintaxe:
 #t=[tempoinicial],[tempofinal]
 ```
 
-O tempo pode ser especificado como um nímero de segundos (como um valor de ponto flutuante) 
+O tempo pode ser especificado como um número de segundos (como um valor de ponto flutuante) 
 ou no formato horas:minutos:segundos (como 2:05:01 para 2 horas, 5 minutos, e 1 segundo).
 
 **Alguns exemplos:**
@@ -204,11 +206,11 @@ Especifica que o vídeo deve começar aos 60 segundos e ser reproduzido até o f
 # Opções alternativas
 
 O HTML inclui elementos que podem ser colocados entre as tags iniciais e finais 
-de codigo que é processado por navegadores que não suportam mídia emHTML5. 
+de codigo que é processado por navegadores que não suportam mídia em HTML5. 
 É possível aproveitar esse fato para prover alternativas para esses navegadores.
 
-Esa seção mostra duas alternativas possíveis para vídeos. Em cada caso, se o naegador 
-suportar HTML5, ele é usado; se não for posível, a alternativa é utilizada.
+Essa seção mostra duas alternativas possíveis para vídeos. Em cada caso, se o navegador 
+suportar HTML5, ele é usado, se não for posível a alternativa é utilizada.
 
 **Utilizando Flash**
 
@@ -223,14 +225,14 @@ elemento ```<video>``` não seja suportado:
 </video>
 ```
 
-Note que você não deve incluir classid na tag object para que outros navegadores 
+Note que você não deve incluir ```classid``` na tag object para que outros navegadores 
 além do Internet Explorer sejam compatíveis.
 
 <br />
 
 **Reproduzindo vídeos em Ogg usando uma applet Java**
 
-Existe uma applet Java chamada Cortado que você pode utilizar como alternativa 
+Existe uma applet Java chamada [Cortado](http://maikmerten.livejournal.com/2256.html) que você pode utilizar como alternativa 
 para reproduzir vídeos em Ogg em navegadores que possuem suporte a Java, 
 mas não suportam vídeos em HTML5:
 
@@ -248,7 +250,7 @@ mas não suportam vídeos em HTML5:
 
 Se você não criar um elemento filho alternativo do elemento objeto cortado, como o 
 elemento ```<p>``` mostrado acima, o Firefox 3.5 que conseguem reproduzir o vídeo 
-mas não tem Java instalado vao informar incorretamente ao usuário que ele precisa 
+mas não tem Java instalado vão informar incorretamente ao usuário que ele precisa 
 instalar um plugin para visualizar o conteúdo da página.
 
 # Error handling
@@ -263,18 +265,18 @@ Isso permite que você detecte que fonte falhou, o que pode ser útil. Considere
 
 ```php
 <video>
-<source id="mp4_src"
+  <source id="mp4_src"
         src="video.mp4"
         type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-</source>
-<source id="3gp_src"
+  </source>
+  <source id="3gp_src"
         src="video.3gp"
         type='video/3gpp; codecs="mp4v.20.8, samr"'>
-</source>
-<source id="ogg_src"
+  </source>
+  <source id="ogg_src"
         src="video.ogv"
         type='video/ogg; codecs="theora, vorbis"'>
-</source>
+  </source>
 </video>
 ```
 
@@ -282,7 +284,8 @@ Como o Firefox não suporta MP4 e 3GP por serem patenteados, os elementos [\<sou
 com os IDs **"mp4_src"** e **"3gp_src"** vão receber eventos error antes que o 
 rescurso Ogg seja carregado. As fontes são testadas na ordem em que aparecem, 
 e assim que uma é carregada de maneira correta, o resto das fontes não são testadas.
-Detectando quando nenhuma fonte foi carregada
+
+# Detectando quando nenhuma fonte foi carregada
 
 Para detectar que todos os elementos filhos <source> falharam, confira os valores do 
 atributo networkState do elemento media. Se esse valor for HTMLMediaElement.NETWORK_NO_SOURCE, 
