@@ -53,7 +53,8 @@ O atributo preload é usado em elementos audio para carregar arquivos grandes. E
 * **auto:** carrega o arquivo
 * **metadata:** carrega apenas os meta dados do arquivo
 
-Vários arquivos podem ser especificados utilizando o elemento ```<source>``` para disponibilizar 
+Vários arquivos podem ser especificados utilizando o elemento 
+```[<source>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source)``` para disponibilizar 
 vídeo ou áudio codificados em formatos diferentes para navegadores diferentes. Por exemplo:
 
 ```php
@@ -199,6 +200,101 @@ Especifica que o vídeo deve ser reproduzido do início até 2 horas.
 **http://foo.com/video.ogg#t=60,**
 <br />
 Especifica que o vídeo deve começar aos 60 segundos e ser reproduzido até o final. 
+
+# Opções alternativas
+
+O HTML inclui elementos que podem ser colocados entre as tags iniciais e finais 
+de codigo que é processado por navegadores que não suportam mídia emHTML5. 
+É possível aproveitar esse fato para prover alternativas para esses navegadores.
+
+Esa seção mostra duas alternativas possíveis para vídeos. Em cada caso, se o naegador 
+suportar HTML5, ele é usado; se não for posível, a alternativa é utilizada.
+
+**Utilizando Flash**
+
+Você pode utilizar Flash para reproduzir um vídeo no formato Flash caso o 
+elemento ```<video>``` não seja suportado:
+
+```php
+<video src="video.ogv" controls>
+    <object data="flvplayer.swf" type="application/x-shockwave-flash">
+      <param value="flvplayer.swf" name="movie"/>
+    </object>
+</video>
+```
+
+Note que você não deve incluir classid na tag object para que outros navegadores 
+além do Internet Explorer sejam compatíveis.
+
+<br />
+
+**Reproduzindo vídeos em Ogg usando uma applet Java**
+
+Existe uma applet Java chamada Cortado que você pode utilizar como alternativa 
+para reproduzir vídeos em Ogg em navegadores que possuem suporte a Java, 
+mas não suportam vídeos em HTML5:
+
+```php
+<video src="my_ogg_video.ogg" controls width="320" height="240">
+  <object type="application/x-java-applet"
+          width="320" height="240">
+     <param name="archive" value="cortado.jar">
+     <param name="code" value="com.fluendo.player.Cortado.class">
+     <param name="url" value="my_ogg_video.ogg">
+     <p>You need to install Java to play this file.</p>
+  </object>
+</video>
+```
+
+Se você não criar um elemento filho alternativo do elemento objeto cortado, como o 
+elemento ```<p>``` mostrado acima, o Firefox 3.5 que conseguem reproduzir o vídeo 
+mas não tem Java instalado vao informar incorretamente ao usuário que ele precisa 
+instalar um plugin para visualizar o conteúdo da página.
+
+# Error handling
+(Firefox 4 / Thunderbird 3.3 / SeaMonkey 2.1)
+
+A partir do **Gecko 2.0 (Firefox 4 / Thunderbird 3.3 / SeaMonkey 2.1)**, o gerenciamento de 
+erros é revisada para corresponder à última versão da especificação do HTML5. 
+Ao invés do evento error ser enviado ao elemento media, ele é enviado ao elemento 
+filho ```[<source>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source)``` correspondente às fontes em que ocorreram o erro.
+
+Isso permite que você detecte que fonte falhou, o que pode ser útil. Considere esse código HTML:
+
+```php
+<video>
+<source id="mp4_src"
+        src="video.mp4"
+        type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</source>
+<source id="3gp_src"
+        src="video.3gp"
+        type='video/3gpp; codecs="mp4v.20.8, samr"'>
+</source>
+<source id="ogg_src"
+        src="video.ogv"
+        type='video/ogg; codecs="theora, vorbis"'>
+</source>
+</video>
+```php
+
+Como o Firefox não suporta MP4 e 3GP por serem patenteados, os elementos ```[<source>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source)``` 
+com os IDs **"mp4_src"** e **"3gp_src"** vão receber eventos error antes que o 
+rescurso Ogg seja carregado. As fontes são testadas na ordem em que aparecem, 
+e assim que uma é carregada de maneira correta, o resto das fontes não são testadas.
+Detectando quando nenhuma fonte foi carregada
+
+Para detectar que todos os elementos filhos <source> falharam, confira os valores do 
+atributo networkState do elemento media. Se esse valor for HTMLMediaElement.NETWORK_NO_SOURCE, 
+você saberá que todas as fontes falharam o carregamento.
+
+Se nesse ponto você inserir uma outra fonte ao inserir um novo elemento ```[<source>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source)``` 
+como filho do elemento media, o Gecko tenta carregar o recurso especificado.
+
+
+
+
+
 
 
 <br />
