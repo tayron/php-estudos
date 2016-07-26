@@ -99,8 +99,102 @@ formatos de mídia suportados por vários navegadores, veja
 
 # Controlando a reprodução de mídia
 
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Using_HTML5_audio_and_video
+
+Após a mídia ser incorporada utilizando no documento HTML utilizando os novos elementos, 
+é possível controla-los com código de JavaScript. Por exemplo, para começar (ou repetir) a 
+reprodução, você pode fazer isto:
+
+```php
+var v = document.getElementsByTagName("video")[0];
+v.play();
+```
+A primeira linha pega o primeiro elemento video, e a segunda chama o método ```play()```
+do elemento, como definido na interface 
+[nsIDOMHTMLMediaElement](https://developer.mozilla.org/pt-BR/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIDOMHTMLMediaElement), 
+que é utilizada para implementar elementos de mídia.
+
+Controlando um reprodutor de áudio para reproduzir, pausar, aumentar e diminuir o 
+volume usando JavaScript é simples.
+
+```php
+<audio id="demo" src="audio.mp3"></audio>
+<div>
+  <button onclick="document.getElementById('demo').play()">Reproduzir o áudio</button>
+  <button onclick="document.getElementById('demo').pause()">Pausar o áudio</button>
+  <button onclick="document.getElementById('demo').volume+=0.1">Aumentar o volume</button>
+  <button onclick="document.getElementById('demo').volume-=0.1">Diminuir o volume</button>
+</div>
+```
+
+# Parando o download de mídia
+
+Embora parar a reprodução de mídia seja fácil usando o método ```pause()``` do elemento, o 
+navegador continua baixando a mídia até que o elemento de mídia seja excluído por 
+meio da coleção de lixo.
+
+Esta é um modo para parar o download imediatamente:
+
+```php
+var mediaElement = document.getElementById("myMediaElementID");
+mediaElement.pause();
+mediaElement.src = "";
+```
+
+Ao definir o atributo src do elemento de mídia para uma string vazia, o decodificador 
+interno do elemento é destruído, o que para o download.
+
+# Navegando pela mídia
+
+Elementos de mídia provemsuporte para mover a posição atual para pontos específicos 
+do conteúdo da mídia. Iso é feito ao definir o valor da propriedade currentTime no 
+elemento; veja HTMLMediaElement para mais detalhes sobre as propriedades do elemento. 
+Simplesmente defina o valor para o tempo, em segundos, em que você quer que a 
+reprodução do vídeo continue.
+
+Você pode usar a propriedade seekable para determinar os valores em que é possível 
+ir no momento. Essa propriedade retorna o objeto TimeRanges listando os 
+intervalos de tempo em que você pode navegar.
+
+```php
+var mediaElement = document.getElementById('mediaElementID');
+mediaElement.seekable.start();  // Retorna o tempo em que o arquivo começa (em segundos)
+mediaElement.seekable.end();    // Retorna o tempo em que o arquivo termina (em segundos)
+mediaElement.currentTime = 122; // Ir para 122 segundos
+mediaElement.played.end();      // Retorna o numero de segundos que o navegador reproduziu
+```
+
+# Especificando o intervalo de reprodução
+
+Quado especificando a URI de um elemento ```<audio>``` ou ```<video>```, você pode incluir 
+opcionalmente informações adicionais para especificar a parte da mídia a ser reproduzida. 
+Para fazer isso, use uma hashtag ("#") seguida pela descrição do fragmento da mídia.
+
+O intervalo é especificado usando a sintaxe:
+
+```php
+#t=[tempoinicial],[tempofinal]
+```
+
+O tempo pode ser especificado como um nímero de segundos (como um valor de ponto flutuante) 
+ou no formato horas:minutos:segundos (como 2:05:01 para 2 horas, 5 minutos, e 1 segundo).
+
+**Alguns exemplos:**
+
+1. http://foo.com/video.ogg#t=10,20
+    Especifica que o intervalo entre 10 e 20 segundos deve ser reproduzido.
+
+2. http://foo.com/video.ogg#t=,10.5
+    Especifica que o vídeo deve ser reproduzido do início até 10,5 segundos.
+http://foo.com/video.ogg#t=,02:00:00
+    Especifica que o vídeo deve ser reproduzido do início até 2 horas.
+
+3. http://foo.com/video.ogg#t=60,
+    Especifica que o vídeo deve começar aos 60 segundos e ser reproduzido até o final. 
+
 
 <br />
+
 
 Referências:
 
