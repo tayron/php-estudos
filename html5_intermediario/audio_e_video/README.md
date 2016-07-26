@@ -276,7 +276,7 @@ Isso permite que você detecte que fonte falhou, o que pode ser útil. Considere
         type='video/ogg; codecs="theora, vorbis"'>
 </source>
 </video>
-```php
+```
 
 Como o Firefox não suporta MP4 e 3GP por serem patenteados, os elementos ```[<source>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source)``` 
 com os IDs **"mp4_src"** e **"3gp_src"** vão receber eventos error antes que o 
