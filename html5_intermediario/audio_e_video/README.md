@@ -69,7 +69,7 @@ não suportar Ogg, o navegador reproduz o arquivo  MPEG-4.
 Veja também a lista [media formats supported by the audio and video elements](https://developer.mozilla.org/En/Media_formats_supported_by_the_audio_and_video_elements) 
 para mais detalhes.
 
-<br /> <br />
+<br /> 
 
 Também é possível especificar os codecs que o arquivo de mídia requer; isso permite 
 que o navegador faça escolhas mais inteligentes:
