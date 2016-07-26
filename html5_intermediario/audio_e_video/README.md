@@ -181,26 +181,23 @@ ou no formato horas:minutos:segundos (como 2:05:01 para 2 horas, 5 minutos, e 1 
 
 **Alguns exemplos:**
 
-1. http://foo.com/video.ogg#t=10,20
-
+**http://foo.com/video.ogg#t=10,20**
 Especifica que o intervalo entre 10 e 20 segundos deve ser reproduzido.
 
 <br />
 
-2. http://foo.com/video.ogg#t=,10.5
-
+**http://foo.com/video.ogg#t=,10.5**
 Especifica que o vídeo deve ser reproduzido do início até 10,5 segundos.
 
 <br />
 
-3. http://foo.com/video.ogg#t=,02:00:00
-
+**http://foo.com/video.ogg#t=,02:00:00**
 Especifica que o vídeo deve ser reproduzido do início até 2 horas.
 
 <br />
 
-3. http://foo.com/video.ogg#t=60,
-    Especifica que o vídeo deve começar aos 60 segundos e ser reproduzido até o final. 
+**http://foo.com/video.ogg#t=60,**
+Especifica que o vídeo deve começar aos 60 segundos e ser reproduzido até o final. 
 
 
 <br />
