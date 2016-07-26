@@ -54,7 +54,7 @@ O atributo preload é usado em elementos audio para carregar arquivos grandes. E
 * **metadata:** carrega apenas os meta dados do arquivo
 
 Vários arquivos podem ser especificados utilizando o elemento 
-[<source>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source) para disponibilizar 
+[\<source\>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source) para disponibilizar 
 vídeo ou áudio codificados em formatos diferentes para navegadores diferentes. Por exemplo:
 
 ```php
@@ -257,7 +257,7 @@ instalar um plugin para visualizar o conteúdo da página.
 A partir do **Gecko 2.0 (Firefox 4 / Thunderbird 3.3 / SeaMonkey 2.1)**, o gerenciamento de 
 erros é revisada para corresponder à última versão da especificação do HTML5. 
 Ao invés do evento error ser enviado ao elemento media, ele é enviado ao elemento 
-filho [<source>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source) correspondente às fontes em que ocorreram o erro.
+filho [\<source\>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source) correspondente às fontes em que ocorreram o erro.
 
 Isso permite que você detecte que fonte falhou, o que pode ser útil. Considere esse código HTML:
 
@@ -278,7 +278,7 @@ Isso permite que você detecte que fonte falhou, o que pode ser útil. Considere
 </video>
 ```
 
-Como o Firefox não suporta MP4 e 3GP por serem patenteados, os elementos [<source>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source) 
+Como o Firefox não suporta MP4 e 3GP por serem patenteados, os elementos [\<source\>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source) 
 com os IDs **"mp4_src"** e **"3gp_src"** vão receber eventos error antes que o 
 rescurso Ogg seja carregado. As fontes são testadas na ordem em que aparecem, 
 e assim que uma é carregada de maneira correta, o resto das fontes não são testadas.
@@ -288,7 +288,7 @@ Para detectar que todos os elementos filhos <source> falharam, confira os valore
 atributo networkState do elemento media. Se esse valor for HTMLMediaElement.NETWORK_NO_SOURCE, 
 você saberá que todas as fontes falharam o carregamento.
 
-Se nesse ponto você inserir uma outra fonte ao inserir um novo elemento [<source>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source) 
+Se nesse ponto você inserir uma outra fonte ao inserir um novo elemento [\<source\>](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/source) 
 como filho do elemento media, o Gecko tenta carregar o recurso especificado.
 
 
