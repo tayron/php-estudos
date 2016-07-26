@@ -64,6 +64,42 @@ vídeo ou áudio codificados em formatos diferentes para navegadores diferentes.
 </video>
 ```
 
+Isso reproduz o arquivo Ogg em navegadores que suportam o formato Ogg. Se o navegador 
+não suportar Ogg, o navegador reproduz o arquivo  MPEG-4. 
+Veja também a lista [media formats supported by the audio and video elements](https://developer.mozilla.org/En/Media_formats_supported_by_the_audio_and_video_elements) 
+para mais detalhes.
+
+<br /> <br />
+
+Também é possível especificar os codecs que o arquivo de mídia requer; isso permite 
+que o navegador faça escolhas mais inteligentes:
+
+
+```php
+<video controls>
+  <source src="foo.ogg" type="video/ogg; codecs=dirac, speex">
+  Seu navegador não suporta o elemento <code>video</code>.
+</video>
+```
+
+Aqui é especificado que o vídeo usa os codecs Dirac e Speex. Se o navegador suportar 
+Ogg, mas não suportar os codecs especificados, o vídeo não será reproduzido.
+
+Se o atributo type não estiver especificado, o tipo de mídia é obtido no servidor e 
+é verificado se o navegador consegue reproduzi-lo; 
+se ele não pode ser renderizado, o próximo source é verificado. 
+Se nenhum dos elementos source pode ser utilizado, um evento error é enviado para 
+o elemento video. Se o atributo type estiver especificado, ele é comparado aos 
+tipos que o navegador consegue reproduzir, e se ele não for reconhecido, 
+o servidor não é verificado; ao invés disso, o próximo source é verificado.
+
+Veja [Media events](https://developer.mozilla.org/en/DOM/Media_events) para uma lista 
+completa de eventos relacionados a reprodução de mídia. Para detalhes sobre os 
+formatos de mídia suportados por vários navegadores, veja 
+[Media formats supported by the audio and video elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats).
+
+
+# Controlando a reprodução de mídia
 
 
 <br />
