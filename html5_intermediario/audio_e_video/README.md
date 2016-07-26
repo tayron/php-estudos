@@ -292,16 +292,16 @@ Se nesse ponto você inserir uma outra fonte ao inserir um novo elemento ```[<so
 como filho do elemento media, o Gecko tenta carregar o recurso especificado.
 
 
-
-
-
-
-
 <br />
 
 
-Referências:
+**Conteúdo replicado de:**
 
 * https://developer.mozilla.org/pt-BR/docs/Web/HTML/Using_HTML5_audio_and_video
+
+<br />
+
+**Referências:**
+
 * http://www.w3schools.com/html/html5_audio.asp
 * http://www.w3schools.com/html/html5_video.asp
