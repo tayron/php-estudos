@@ -13,7 +13,7 @@ Com eventos enviados pelo servidor as atualizações vêm automaticamente.
 * Atualizações do Twitter
 * Atualizações preços de ações
 * Atualizações de feeds de notícias
-* Atualizações de resultados desportivos
+* Atualizações de resultados esportivos
 * etc
 
 **Navegadores suportados**
