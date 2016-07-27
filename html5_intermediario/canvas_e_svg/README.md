@@ -5,8 +5,6 @@
 SVG é a abreviatura de **Scalable Vectorial Graphics**, que traduzido para o português 
 significa **Gráficos Vetoriais Escaláveis**. 
 
-<br />
-
 SVG é uma linguagem XML para descrever gráficos bidimensionais sejam eles de forma dinâmica, estática ou animada. 
 Seu diferencial em relação as outros formatos vetoriais é de ser um formato aberto, 
 não pertencendo a nenhuma empresa. Ele foi originalmente criado pelo W3C, responsável 
@@ -72,6 +70,8 @@ O resultado no navegador será um quadrado de tamanho 50x50px.
 * Geração de gráficos.
 * Análise de imagens para gerar por exemplo, histogramas.
 * Renderização de jogos.
+
+<br />
 
 **O SVG pode ser usado para:**
 
