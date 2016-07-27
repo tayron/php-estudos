@@ -62,6 +62,8 @@ ctx.fillRect(60, 60, 50, 50);
 
 O resultado no navegador será um quadrado de tamanho 50x50px.
 
+<br />
+
 # Aplicação
 
 **O Canvas pode ser usado para:**
