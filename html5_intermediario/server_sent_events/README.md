@@ -1,12 +1,10 @@
 # Server-Sent Events
 
-É um recurso onde uma página é capaz de receber atualizações de um servidor.
+Server-Sent Events é um recurso onde uma página é capaz de receber atualizações de um servidor.
 
-# Server-Sent Events - One Way Messaging
+Isso também era possível antes, mas a página web teria que perguntar se há atualizações disponíveis 
+com isso o servidor era bombardeado de requisições até que se tivesse uma resposta.
 
-Um **server-sent event** é quando uma página web recebe automaticamente as atualizações de um servidor.
-
-Isso também era possível antes, mas a página web teria que perguntar se há atualizações disponíveis.
 Com eventos enviados pelo servidor as atualizações vêm automaticamente.
 
 **Exemplos:** 
