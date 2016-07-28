@@ -63,6 +63,45 @@ if(typeof(EventSource) !== "undefined") {
 <br />
 
 
+#Do lado do servidor
+
+Para o exemplo acima funcionar, é necessário um servidor que seja capaz de enviar 
+atualizações de dados como PHP ou ASP.
+
+Do lado do servidor a sintaxe é bem simples, basta definir no cabeçalho o "Content-Type" 
+como "text/event-stream".
+
+**Exemplo com PHP**
+
+```php
+header('Content-Type: text/event-stream');
+header('Cache-Control: no-cache');
+
+$time = date('r');
+echo "data: The server time is: {$time}\n\n";
+flush();
+```
+
+**Exemplo com ASP (VB)**
+
+```php
+Response.ContentType = "text/event-stream"
+Response.Expires = -1
+Response.Write("data: The server time is: " & now())
+Response.Flush()
+```
+
+<br />
+
+**Exeplicação do código acima:**
+
+* Definir "Content-Type" com "text/event-stream"
+* Especificar que a página não deve armazenar ser amarzenada em cache
+* Saída dos dados enviados sempre começando com **"data: "**
+* Descarregue a saída de volta para a web page
+
+<br />
+
 Referências:
 
 * http://www.w3schools.com/html/html5_serversentevents.asp
