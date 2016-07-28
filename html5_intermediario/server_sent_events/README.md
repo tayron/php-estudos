@@ -96,9 +96,9 @@ Response.Flush()
 **Exeplicação do código acima:**
 
 * Definir "Content-Type" com "text/event-stream"
-* Especificar que a página não deve armazenar ser amarzenada em cache
+* Especificar que a página não deve ser armazenada em cache
 * Saída dos dados enviados sempre começando com **"data: "**
-* Descarregue a saída de volta para a web page
+* Envie a os dados de volta para a web page
 
 <br />
 
