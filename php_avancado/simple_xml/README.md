@@ -1,3 +1,8 @@
+#SimpleXML
+O SimpleXML é uma extensão do PHP que efetua a análise sintática, ou parsing, de uma estrutura em XML. Sua principal característica é transformar o XML em uma lista de objetos, o que facilita na iteração e manipulação.
+
+Esta extensão já vem automaticamente habilitada no PHP5.
+
 # SimpleXMLElement
 Objeto retornado pelos métodos simplexml_load_string e simplexml_load_file com os dados do xml pronto para serem processados.
 Ambas funções retornam um objeto da classe SimpleXMLElement com propriedades contendo os dados do documento XML, ou FALSE em caso de falha. Também podem retornar um E_WARNING caso seja encontrado erro no XML.
