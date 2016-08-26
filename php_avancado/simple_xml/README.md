@@ -64,5 +64,6 @@ foreach ($books as $book) {
 <br />
 
 Referências: 
+* http://treinaweb.com.br
 * http://php.net/manual/pt_BR/function.simplexml-load-string.php
 * http://php.net/manual/pt_BR/function.simplexml-load-file.php
