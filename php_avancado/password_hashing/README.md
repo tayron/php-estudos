@@ -40,7 +40,7 @@ Com essa nova api, foram criadas quatro novas funções:
 
 ```php
 // Usando as opções default
-echo password_hash("rasmuslerdorf", PASSWORD_DEFAULT) . "\n";
+echo password_hash("123456", PASSWORD_DEFAULT) . "\n";
 // $2y$10$.vGA1O9wmRjrwAVXD98HNOgsNpDczlqm3Jq7KnEd1rVAGv3Fykk1a
 // Definindo o custo e o salt
 $options = [
@@ -71,5 +71,3 @@ Referências:
 * http://php.net/manual/pt_BR/faq.passwords.php
 * http://php.net/manual/pt_BR/book.password.php#book.password
 * http://blog.thiagobelem.net/php-5-5-api-de-senhas
-
-
