@@ -17,8 +17,8 @@ que geralmente é feito com funções e expressões regulares complexas. e são 
 Filtra a variável com um especificado filtro, exemplo:
 
 ```php
-var_dump(filter_var('bob@example.com', FILTER_VALIDATE_EMAIL));
-// string(15) "bob@example.com"
+var_dump(filter_var('pedo@exemplo.com.br', FILTER_VALIDATE_EMAIL));
+// string(15) "pedo@exemplo.com.br"
 
 var_dump(filter_var('10.5', FILTER_VALIDATE_INT));
 // bool(false) 
@@ -123,6 +123,3 @@ Referências:
 * http://php.net/manual/pt_BR/function.filter-input.php
 * http://php.net/manual/pt_BR/function.htmlentities.php
 * http://php.net/manual/pt_BR/function.htmlspecialchars.php
-
-
-
