@@ -12,7 +12,7 @@ PHP é bem conhecida por permitindo uma infinidade de alvos de injeção de cód
 # Inclusão de arquivos
 O alvo mais óbvio para um ataque de injeção de código são as funções include(), include_once(), require() e require_once(). Se a entrada não confiável é permitido para determinar o parâmetro de caminho passado para essas funções é possível influenciar qual arquivo local será incluído. Deve notar-se que o arquivo incluído não precisa ser um arquivo PHP real; qualquer arquivo incluído que é capaz de transportar dados textuais (por exemplo, quase nada) é permitido.
 
-O parâmetro de caminho também podem ser vulneráveis ​​a uma passagem de diretório ou inclusão remota de arquivos. Usando a seqüência de ../ ou .. (ponto-ponto-slash) em um caminho permite que um atacante para navegar para quase qualquer arquivo acessível para o processo PHP. As funções acima também aceitará um URL na configuração padrão do PHP, a menos que XXX é desativado.
+O parâmetro de caminho também podem ser vulneráveis ​​a uma passagem de diretório ou inclusão remota de arquivos. Usando a seqüência de ../ ou .. (ponto-ponto-slash) em um caminho permite que um atacante para navegar para quase qualquer arquivo acessível para o processo PHP.
 
 <br />
 
