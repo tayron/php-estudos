@@ -23,19 +23,7 @@ $.ajax({
 
 **Exemplo de chamada Ajax sem utilizar Jquery:**
 ```php
-var xmlHttp = GetXmlHttpObject();
-function carregarBairro() {
-    if (xmlHttp == null) {
-        alert ("Seu browser não suporta AJAX!");
-        return;
-    }else{
-        var url = "carrega_bairro.php?por=cidade";
-        xmlHttp.onreadystatechange = stateChanged;
-        xmlHttp.open("GET",url,true);
-        xmlHttp.send(null);
-    }
-}
- 
+
 function stateChanged() {
     if (xmlHttp.readyState==1 || xmlHttp.readyState==2 || xmlHttp.readyState==3) {
         document.getElementById("textoAjax").innerHTML="Carregando...";
@@ -59,6 +47,19 @@ function GetXmlHttpObject() {
         }
     }
     return xmlHttp;
+}
+
+var xmlHttp = GetXmlHttpObject();
+function carregarBairro() {
+    if (xmlHttp == null) {
+        alert ("Seu browser não suporta AJAX!");
+        return;
+    }else{
+        var url = "carrega_bairro.php?por=cidade";
+        xmlHttp.onreadystatechange = stateChanged;
+        xmlHttp.open("GET",url,true);
+        xmlHttp.send(null);
+    }
 }
 
 carregarBairro();
