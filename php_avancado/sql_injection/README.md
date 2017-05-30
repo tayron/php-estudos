@@ -75,6 +75,7 @@ $stmt->execute();
 
 <br />
 Exemplos:
+
 ```php
 ' or ''='
 ' or true--
