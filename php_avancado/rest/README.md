@@ -23,10 +23,12 @@ por ser mais leve e ter a capacidade de transmitir dados diretamente via HTTP.
 
 Com isso quando ao mapear serviços rests eles deverão ficar semelhante aos exemplos abaixo:
 
-1. http://api.dominio.com.br/clientes
-2. http://api.dominio.com.br/clientes/2
-3. http://api.dominio.com.br/clientes/1/contatos
-4. http://api.dominio.com.br/clientes/1/compras/22/itens/5
+1. http://api.dominio.com.br/cliente
+2. http://api.dominio.com.br/cliente/2
+3. http://api.dominio.com.br/cliente/2/endereco
+4. http://api.dominio.com.br/cliente/1/contato
+5. http://api.dominio.com.br/cliente/1/contato/59
+6. http://api.dominio.com.br/cliente/1/compra/22/item/5
 
 <br />
 
