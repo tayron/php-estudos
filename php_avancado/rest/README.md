@@ -4,13 +4,13 @@ REST (REpresentational State Transfer) é um estilo de arquitetura para sistemas
 hipermídia distribuídos, como a World Wide Web. O conceito dos recursos identificados 
 por identificadores de recursos universais (URIs) é central para a arquitetura RESTful.
 
-Esses recursos podem ser manipulados usando uma interface padrão, como HTTP, e as 
+Esses recursos podem ser manipulados usando uma interface padrão, como HTTP, as 
 informações são trocadas usando representações desses recursos.
 
-Os Web services RESTful são serviços construídos com o estilo de arquitetura RESTful. 
+Os Web services RESTful são serviços construídos com o estilo de arquitetura REST. 
 
 A construção de Web services com a abordagem RESTful está surgindo como uma alternativa 
-popular ao uso de tecnologias baseadas em SOAP para implantação de serviços na Internet, 
+popular ao uso de tecnologias baseadas em SOAP (e outros...) para implantação de serviços na Internet, 
 por ser mais leve e ter a capacidade de transmitir dados diretamente via HTTP.
 
 **Rest é baseado nos verbos HTTP como por exemplo:**
